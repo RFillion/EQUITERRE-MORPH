@@ -1,8 +1,8 @@
 # NOMEQUIPE-MORPH
 Refonte d'un site OBNL.
 
-## **Project Owner (PO) & Scrum Master**
-### Philippe Trudel
+### **Project Owner (PO) & Scrum Master**
+#### Philippe Trudel
 
 ## **Designer & Assurance Qualité (QA)**
 ### Olivier Lalonde
