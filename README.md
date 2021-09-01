@@ -4,14 +4,14 @@ Refonte d'un site OBNL.
 ### **Project Owner (PO) & Scrum Master**
 #### Philippe Trudel
 
-## **Designer & Assurance Qualité (QA)**
-### Olivier Lalonde
+### **Designer & Assurance Qualité (QA)**
+#### Olivier Lalonde
 
-## **Développeur Back-end & DevOp**
-### Raphaël Fillion
+### **Développeur Back-end & DevOp**
+#### Raphaël Fillion
 
-## **Agent de promotion**
-### Jérémy Lévesque
+### **Agent de promotion**
+#### Jérémy Lévesque
 ==================================================
 
 ### *Weekly Scrum*
