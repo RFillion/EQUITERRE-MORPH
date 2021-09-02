@@ -1,5 +1,6 @@
-# NOMEQUIPE-MORPH
-Refonte d'un site OBNL.
+# Équiterre ou CLown
+
+### MORPH
 
 ==================================================
 
@@ -16,11 +17,6 @@ Refonte d'un site OBNL.
 #### Jérémy Lévesque
 ==================================================
 
-### *Weekly Scrum*
-Mercredi - 12h00
-
-==================================================
-
-### **Choix de OBNL**
-1. Equiterre
-2. Clowns sans frontières
+Projet Web 582518MO
+https://smnarnold.com/projets/obnl
+https://trello.com/invite/b/jINTmjyw/42aa5a13fccbacd224296ccd38583219/projet-web-obnl
