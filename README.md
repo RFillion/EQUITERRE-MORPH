@@ -18,5 +18,5 @@
 ==================================================
 
 Projet Web 582518MO
-https://smnarnold.com/projets/obnl
-https://trello.com/invite/b/jINTmjyw/42aa5a13fccbacd224296ccd38583219/projet-web-obnl
+[OBNL](https://smnarnold.com/projets/obnl)
+[TRELLO](https://trello.com/invite/b/jINTmjyw/42aa5a13fccbacd224296ccd38583219/projet-web-obnl)
