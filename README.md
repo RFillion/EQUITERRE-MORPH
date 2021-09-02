@@ -1,4 +1,4 @@
-# Équiterre ou CLown
+# Équiterre ou Clown
 
 ### MORPH
 
