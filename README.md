@@ -7,7 +7,7 @@
 *Project Owner (PO) & Scrum Master* | Philippe Trudel
 *Designer & Assurance Qualité (QA)* | Olivier Lalonde
 *Développeur Back-end & DevOp* | Raphaël Fillion
-*Agent de promotion* | Jérémy Lévesque
+*Agent de promotion* | Jérémie Lévesque
 
 #
 
