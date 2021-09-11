@@ -9,7 +9,7 @@
 *Développeur Back-end & DevOp* | Raphaël Fillion
 *Agent de promotion* | Jérémie Lévesque
 
-### [Équiterre](equiterre-morph.xyz)
+### [Équiterre](https://equiterre-morph.xyz)
 
 #
 
