@@ -4,10 +4,8 @@
 }
 
 html, body {
-  height: 100%;
-  background: #94ba32; 
-  background: -webkit-linear-gradient(to bottom right, #235c96, #94ba32); 
-  background: linear-gradient(to bottom right, #235c96, #94ba32);
+  height: 100vh;
+  background: #235c96; 
   font-family: 'Montserrat', sans-serif;
   font-size: 15px
 }
