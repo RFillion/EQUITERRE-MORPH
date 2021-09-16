@@ -2,13 +2,9 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
 
-body{position:relative ;background-color:#235c96;}
+body{background-color:#235c96; font-family: 'Montserrat', sans-serif;font-size:15px}
 
-p{font-family: 'Montserrat', sans-serif;font-size:15px}
 h1{font-family: 'Montserrat', sans-serif;font-size:30px;}
-
-
-
 
 .un{
   position:relative;
