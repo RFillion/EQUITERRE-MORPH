@@ -20,7 +20,7 @@ h1{font-family: 'Montserrat', sans-serif;font-size:30px;}
   text-align: center;
   margin-top:15px;
   margin-bottom:15px;
-  background-image:url(equiterre_blanc.png);
+  background-image:url(medias/equiterre_blanc.png);
   background-repeat : no-repeat;
   background-size:100%;
   background-position: center;
@@ -54,7 +54,7 @@ h1{font-family: 'Montserrat', sans-serif;font-size:30px;}
     text-transform: uppercase;
     text-align:center;
     padding:15px;
-    background-image:url(background2.PNG);
+    background-image:url(medias/background2.PNG);
     background-repeat : no-repeat;
     background-size:auto;
     filter: grayscale(50%);
