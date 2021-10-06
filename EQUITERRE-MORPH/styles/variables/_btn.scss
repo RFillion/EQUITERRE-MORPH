@@ -4,8 +4,13 @@
     width: 244px;
     height: 67px;
     text-align: center;
-    padding-top:1.3rem;
+    padding-top:1rem;
     background-color: variables.$lapislazuli;
     border-radius: 15px;
-    font-size: 25px !important;
+    cursor: pointer;
+    &--donation{
+        a{
+            font-size: 25px;
+        }
+    }
 }

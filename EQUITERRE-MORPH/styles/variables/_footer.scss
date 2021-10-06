@@ -7,18 +7,20 @@ footer{
     position: fixed;
     left: 0;
     bottom: 0;
-    p{
+    p, a{
         color: white;
-    }
-    a{
-        color:white;
+        margin: 0;
+        padding: 0;
     }
     .copyright {
         text-align: center;
         opacity: 1;
         font-size: 1em;
-        padding-bottom:10px;
+        padding-top:1.5rem;
         bottom: 0;
+    }
+    .contact{
+        margin-left: 20rem;
     }
     .logo__footer{
        margin-left:auto;
