@@ -62,7 +62,6 @@ footer{
         text-align: center;
         padding-left: 0rem !important;
         padding-bottom: 1rem;
-        
     }
     .item.social{
         padding-bottom: 1rem;
@@ -91,6 +90,7 @@ footer{
 
 @media (min-width: 1400px) {
     .contact{
-    text-align: left;
-    padding-left: 15rem;
+        text-align: left;
+        padding-left: 15rem;
+        p{padding-bottom: 0.25rem;}
 } }
