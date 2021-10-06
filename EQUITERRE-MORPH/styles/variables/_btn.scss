@@ -1,0 +1,11 @@
+@use 'styles/variables/variables';
+
+.btn{
+    width: 244px;
+    height: 67px;
+    text-align: center;
+    padding-top:1.3rem;
+    background-color: variables.$lapislazuli;
+    border-radius: 15px;
+    font-size: 25px !important;
+}

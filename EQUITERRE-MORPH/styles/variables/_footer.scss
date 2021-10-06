@@ -1,0 +1,48 @@
+@use 'styles/variables/variables';
+
+footer{
+    background-color: variables.$darkgray;
+    height: 400px;
+    width: 100%;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    p{
+        color: white;
+    }
+    a{
+        color:white;
+    }
+    .copyright {
+        text-align: center;
+        opacity: 1;
+        font-size: 1em;
+        padding-bottom:10px;
+        bottom: 0;
+    }
+    .logo__footer{
+       margin-left:auto;
+       margin-right: auto;
+       height: 225px;
+       width: 600px;
+       object-fit:none;
+    }
+    .item.social{
+        text-align: center;
+    }
+    .item.social>a {
+        font-size: 36px;
+        width: 36px;
+        height: 36px;
+        line-height: 36px;
+        display: inline-block;
+        text-align: center;
+        margin: 0 12px;
+        color: #fff;
+        opacity: 1
+    }
+}
+
+@media screen and (max-width:375px){
+    footer{height:335px;}
+}

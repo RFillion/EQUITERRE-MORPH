@@ -3,3 +3,6 @@
 @use 'styles/variables/footer';
 @use 'styles/variables/navbar';
 @use 'styles/variables/variables';
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css');
+
+*, *::before, *::after { box-sizing: border-box; padding: 0; margin: 0 }
