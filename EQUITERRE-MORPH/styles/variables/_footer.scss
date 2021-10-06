@@ -41,7 +41,13 @@ footer{
         text-align: center;
         margin: 0 12px;
         color: #fff;
-        opacity: 1
+        opacity: 1;
+        transition: all 115ms ease-in-out;
+
+        &:hover{
+            color:variables.$lapislazuli;
+            transform: scale(1.15);
+        }
     }
 }
 
