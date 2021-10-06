@@ -1,6 +1,8 @@
 @use 'styles/variables/variables';
 
-.btn{
+.btn--donation{
+    margin-left: auto;
+    margin-right: auto;
     width: 244px;
     height: 67px;
     text-align: center;
@@ -8,9 +10,8 @@
     background-color: variables.$lapislazuli;
     border-radius: 15px;
     cursor: pointer;
-    &--donation{
+    padding-bottom: 2rem;
         a{
             font-size: 25px;
         }
-    }
 }
