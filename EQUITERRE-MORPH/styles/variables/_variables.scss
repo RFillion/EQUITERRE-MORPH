@@ -27,48 +27,6 @@ $white:white;
     color: $indigodye;
 }
 
-h1{
-    @include title;
-    color: $lapislazuli;
-    font-size: 80px;
-}
-h2{
-    @include title;
-    color: $applegreen;
-    font-size: 60px;
-}
-h3{
-    @include title;
-    color: $applegreen;
-    font-size: 40px;
-}
-h4{
-    @include title;
-    color: $applegreen;
-    font-size: 30px;
-}
-h5{
-    @include title;
-    color: $applegreen;
-    font-size: 16px;
-}
-h6{
-    @include title;
-    color: $applegreen;
-    font-size: 12px;
-}
-
-p{
-    @include text;
-    font-size: 16px;
-}
-
-a{
-    @include links;
-    text-decoration: none;
-    
-}
-
 //Breakpoints
 $grid-breakpoints: (
   xs: 0,

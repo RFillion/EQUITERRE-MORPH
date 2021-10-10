@@ -5,4 +5,43 @@
 @use 'styles/variables/variables';
 @use 'styles/variables/hero';
 
-*, *::before, *::after { box-sizing: border-box; padding: 0; margin: 0 }
+*, *::before, *::after { box-sizing: border-box; padding: 0; margin: 0;}
+
+h1, h2, h3, h4, h5, h6 {@include variables.title;}
+
+h1{
+    color: variables.$lapislazuli;
+    font-size: 80px;
+}
+h2{
+    color: variables.$applegreen;
+    font-size: 60px;
+}
+h3{
+    color: variables.$applegreen;
+    font-size: 40px;
+}
+h4{
+    color: variables.$applegreen;
+    font-size: 30px;
+}
+h5{
+    color: variables.$applegreen;
+    font-size: 16px;
+}
+h6{
+    color: variables.$applegreen;
+    font-size: 12px;
+}
+
+p{
+    @include variables.text;
+    font-size: 16px;
+}
+
+a,
+a:hover,
+a:active{
+    @include variables.links;
+    text-decoration: none;    
+}
