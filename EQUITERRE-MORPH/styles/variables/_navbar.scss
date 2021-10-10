@@ -1,0 +1,15 @@
+.Nav {
+    position: fixed;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: transparent;
+    z-index: 999;
+
+    .hamburger {
+        background: white;
+        width: fit-content;
+        padding: 1.5em 4em;
+    }
+}
