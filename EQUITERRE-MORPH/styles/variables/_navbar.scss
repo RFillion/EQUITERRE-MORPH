@@ -1,12 +1,16 @@
 @use 'styles/variables/variables';
 
+$shadow: 0px 5px 10px rgba(0,0,0,0.3);
+
 .Nav {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    background: transparent;
     z-index: 999;
+    transition: all 150ms ease;
+    &.transparent {background: transparent}
+    &.colored {background: variables.$white; box-shadow: $shadow;}
     .hamburger {
         display: none;
         position: absolute;

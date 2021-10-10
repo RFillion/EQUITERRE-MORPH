@@ -12,6 +12,18 @@ NavBtn.addEventListener('click', () => {
     }
 });
 
-//
+//NavBar Scroll
+let Nav = document.querySelector('.Nav');
+
+window.onscroll = () => {
+    "use strict";
+    if(document.body.scrollTop >= 100 | document.documentElement.scrollTop >= 100) {
+        Nav.classList.add('colored');
+        Nav.classList.remove('transparent');
+    } else {
+        Nav.classList.add('transparent');
+        Nav.classList.remove('colored');
+    }
+};
 
 
