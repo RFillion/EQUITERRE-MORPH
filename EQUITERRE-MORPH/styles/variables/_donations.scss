@@ -3,5 +3,28 @@
 
 .section--donation{
     background-color: variables.$darkolive;
-
+    display: flex;
+    height: 400px;
+    width: 100%;
+    .grid{
+        display: grid;
+        grid-template-columns:1fr 1fr;
+        grid-template-rows:auto auto;
+        gap:10px;
+        align-items: center;
+        justify-content: center;
+        margin: auto 0;
+    }
+    .text{
+        align-items: center;
+        margin: auto 0;
+        padding-left: 18%;
+    }
+    .img{
+        margin: auto 0;
+        padding-left: 25%;
+    }
+    p{
+        color: variables.$applegreen;
+    }
 }

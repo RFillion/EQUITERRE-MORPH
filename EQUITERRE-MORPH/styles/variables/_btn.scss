@@ -18,4 +18,13 @@
 
 .btn--navbar{}
 
-.btn--section-donation{}
+.btn--section-donation{
+    border: none;
+    color: variables.$white;
+    background: variables.$applegreen;
+    border-radius: 15px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    width: 155px;
+    height: 42px;
+}
