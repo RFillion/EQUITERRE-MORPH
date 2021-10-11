@@ -4,6 +4,8 @@
 @use 'styles/variables/navbar';
 @use 'styles/variables/variables';
 @use 'styles/variables/hero';
+@use 'styles/variables/actualites';
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'); // Pour les icons de réseaux sociaux. NE PAS SUPPRIMER // 
 
 *, *::before, *::after { box-sizing: border-box; padding: 0; margin: 0;}
 

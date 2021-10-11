@@ -1,0 +1,43 @@
+@use 'styles/variables/variables';
+
+.section--actualites{
+    background-color: variables.$lapislazuli;
+    width: 100%;
+    height: auto;
+    border-radius: 30% 70% 100% 0% / 0% 0% 100% 100%;
+    h2{
+        margin-top: 5rem;
+    }
+    .container-fluid{
+        margin-bottom: 5rem;
+        margin: auto 0;
+    }
+    .btn{
+        margin: 0;
+        padding: 0;
+    }
+    .card{
+        border:1px black solid;
+        border-radius: 0;
+        height: 238px;
+        .card-title{
+            color: variables.$lapislazuli;
+        }
+        .card-subtitle{
+            color: variables.$goldenrod;
+        }
+        .img-fluid{
+            height: 236px;
+            width: 500px;
+            object-fit:cover;
+        }
+        a{
+            @include variables.links;
+            font-size: 16px;
+            color: variables.$goldenrod;
+            &::after{
+                content: url(styles/arrow-right.svg);
+            }
+        }
+    }
+}
