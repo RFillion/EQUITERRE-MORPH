@@ -35,9 +35,6 @@
             @include variables.links;
             font-size: 16px;
             color: variables.$goldenrod;
-            &::after{
-                content: url(styles/arrow-right.svg);
-            }
         }
     }
 }
