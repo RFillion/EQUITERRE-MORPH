@@ -8,7 +8,8 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        .container {
+        .container-fluid {
+            margin-left: 8vw;
             .btn {
                 border: none;
                 color: variables.$white;

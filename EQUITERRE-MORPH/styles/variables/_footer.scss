@@ -19,12 +19,12 @@ footer{
         font-size: 1em;
         padding-top:1.5rem;
     }
+    .contact{
+        margin-left: 9vw;
+    }
     .logo--footer{
-       margin-left:auto;
-       margin-right:auto;
-       height: 200px;
+       margin: 2rem auto 0.8rem auto;
        width: 300px;
-       object-fit:none;
     }
     .item.social{
         text-align: center;
@@ -58,7 +58,8 @@ footer{
     footer{height:512px;}
     .contact{
         text-align: center;
-        padding-left: 0rem !important;
+        margin-left: 0vw !important;
+        padding-left: 10px;
         padding-bottom: 1rem;
     }
     .item.social{
@@ -68,27 +69,23 @@ footer{
 @media (min-width: 992px){
     .contact{
         text-align: left;
-        padding-left: 2rem;
     }
  }
 
 @media (min-width: 1399.98px){
     .contact{
         text-align: left;
-        padding-left: 8rem;
     }
  }
 
  @media (min-width: 1199.98px){
     .contact{
         text-align: left;
-        padding-left: 5rem;
     }
 }
 
 @media (min-width: 1400px) {
     .contact{
         text-align: left;
-        padding-left: 15rem;
         p{padding-bottom: 0.25rem;}
 } }
