@@ -1,5 +1,13 @@
 # Équiterre
 
+### **Pour avoir accès au projet**
+* Ouvrir le Terminal
+* cd .\EQUITERRE-MORPH\
+* NPM INSTALL
+* NPM RUN DEV
+
+Good to go!
+
 ### **MORPH**
 
 | Poste | Nom |
