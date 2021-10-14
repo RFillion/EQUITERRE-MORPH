@@ -5,29 +5,79 @@
     background-color: variables.$darkolive;
     display: flex;
     width: 100%;
-    padding-right: 15px;
-    padding-left: 15px;
+    padding: 3rem 15px;
     margin-right: auto;
     margin-left: auto;
     .grid{
         display: grid;
-        grid-template-columns:1fr 1fr;
+        grid-template-columns:1fr;
         grid-template-rows:auto auto;
         gap:10px;
         align-items: center;
+        text-align: center;
         justify-content: center;
         margin: auto 0;
     }
     .text{
         align-items: center;
         margin: auto 0;
-        padding-left: 18%;
     }
     .img{
         margin: auto 0;
-        padding-left: 25%;
+        img{
+            height: 150px;
+            width: 150px;
+        }
     }
     p{
         color: variables.$applegreen;
+        font-size: 12px;
+    }
+    h3{
+        font-size: 24px;
+    }
+    h4{
+        font-size: 16px;
+    }
+}
+
+//tablette
+@media only screen and (min-width: 768px){
+    p{
+        font-size: 16px !important;
+    }
+    h3{
+        font-size: 32px !important;
+    }
+    h4{
+        font-size: 24px !important;
+    }
+    .img{
+        img{
+            height: 275px !important;
+            width: 275px !important;
+        }
+    }
+}
+
+@media only screen and (min-width:992px) {
+    .grid{
+        grid-template-columns:60% 40% !important;
+        text-align: left !important;
+    }
+    h3{
+        font-size: 40px !important;
+    }
+    h4{
+        font-size: 30px !important;
+    }
+    .img{
+        padding-left: 20% !important;
+        img{
+            height: 100% !important;
+        }
+    }
+    .text{
+        padding-left: 10%;
     }
 }
