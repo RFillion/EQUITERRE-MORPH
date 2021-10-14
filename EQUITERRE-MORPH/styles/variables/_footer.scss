@@ -1,3 +1,4 @@
+
 @use 'styles/variables/variables';
 
 footer{
@@ -6,6 +7,38 @@ footer{
     width: 100%;
     left: 0;
     bottom: 0;
+    .container-fluid{
+        background-color: variables.$darkgray; 
+    }
+    .footer-grid{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 200px;
+        gap: 18px;
+        grid-template-areas: 
+        "logo"
+        "information"
+        "btn"
+        "social-network";
+    }
+    .logo{
+        grid-area: logo;
+        grid-row:auto;
+        display: flex;
+        .logo--footer{
+           margin: auto auto;
+           width: 350px;
+        }
+    }
+    .information{
+        grid-area:information;
+    }
+    .social-network{
+        grid-area:social-network;
+    }
+    .btn{
+        grid-area: btn;
+    }
     p, a{
         color: white;
         margin: 0;
@@ -20,11 +53,12 @@ footer{
         padding-top:1.5rem;
     }
     .contact{
-        margin-left: 9vw;
+        text-align: center;
     }
     .logo--footer{
        margin: 2rem auto 0.8rem auto;
        width: 300px;
+        text-align: center;
     }
     .item.social{
         text-align: center;
@@ -48,44 +82,50 @@ footer{
     }
 }
 
-//mobile
-@media (max-width: 575.98px){
-    footer{height:335px;}
-}
-
 //tablette
-@media (max-width: 991.98px){
-    footer{height:512px;}
+@media (min-width: 768px){
     .contact{
-        text-align: center;
-        margin-left: 0vw !important;
-        padding-left: 10px;
-        padding-bottom: 1rem;
+        text-align: left;
     }
-    .item.social{
-        padding-bottom: 1rem;
+    .information{
+        grid-area:information;
+        grid-column:span 2;
+        grid-column:span 2;
     }
+    .social-network{
+        grid-area:social-network;
+        grid-column-start:2;
+        grid-column-end: 4;
+    }
+    .btn{
+        grid-area: btn;
+        grid-column-start:2;
+        grid-column-end: 4;
+    }
+    
 }
+
+//desktop et +
 @media (min-width: 992px){
-    .contact{
-        text-align: left;
+    .footer-grid{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr !important;
+        gap: 10px;
+        grid-template-areas:
+        "logo logo logo"
+        "information social-network btn";
     }
- }
-
-@media (min-width: 1399.98px){
-    .contact{
-        text-align: left;
+    .logo{
+        grid-area:logo;
+        grid-column: 2 !important;
     }
- }
-
- @media (min-width: 1199.98px){
-    .contact{
-        text-align: left;
+    .information{
+        grid-area:information;
+    }
+    .social-network{
+        grid-area:social-network;
+    }
+    .btn{
+        grid-area:btn;
     }
 }
-
-@media (min-width: 1400px) {
-    .contact{
-        text-align: left;
-        p{padding-bottom: 0.25rem;}
-} }
