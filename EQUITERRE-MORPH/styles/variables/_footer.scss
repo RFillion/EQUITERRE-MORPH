@@ -1,42 +1,11 @@
 @use 'styles/variables/variables';
 
 footer{
+    background-color: variables.$darkgray;
     height: 400px;
     width: 100%;
     left: 0;
     bottom: 0;
-    .container-fluid{
-        background-color: variables.$darkgray; 
-    }
-    .footer-grid{
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 200px;
-        gap: 18px;
-        grid-template-areas: 
-        "logo"
-        "information"
-        "btn"
-        "social-network";
-    }
-    .logo{
-        grid-area: logo;
-        grid-row:auto;
-        display: flex;
-        .logo--footer{
-           margin: auto auto;
-           width: 350px;
-        }
-    }
-    .information{
-        grid-area:information;
-    }
-    .social-network{
-        grid-area:social-network;
-    }
-    .btn{
-        grid-area: btn;
-    }
     p, a{
         color: white;
         margin: 0;
@@ -51,7 +20,11 @@ footer{
         padding-top:1.5rem;
     }
     .contact{
-        text-align: center;
+        margin-left: 9vw;
+    }
+    .logo--footer{
+       margin: 2rem auto 0.8rem auto;
+       width: 300px;
     }
     .item.social{
         text-align: center;
@@ -75,61 +48,44 @@ footer{
     }
 }
 
+//mobile
+@media (max-width: 575.98px){
+    footer{height:335px;}
+}
+
 //tablette
-@media (min-width: 768px){
+@media (max-width: 991.98px){
     footer{height:512px;}
+    .contact{
+        text-align: center;
+        margin-left: 0vw !important;
+        padding-left: 10px;
+        padding-bottom: 1rem;
+    }
     .item.social{
         padding-bottom: 1rem;
     }
-    .footer-grid{
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr !important;
-        gap: 10px;
+}
+@media (min-width: 992px){
+    .contact{
+        text-align: left;
     }
-    .logo{
-        grid-area: logo;
-        grid-column-start:2;
-        grid-column-end: 4;
+ }
+
+@media (min-width: 1399.98px){
+    .contact{
+        text-align: left;
     }
-    .information{
-        grid-area:information;
-        grid-column:span 2;
-        grid-column:span 2;
+ }
+
+ @media (min-width: 1199.98px){
+    .contact{
+        text-align: left;
     }
-    .social-network{
-        grid-area:social-network;
-        grid-column-start:2;
-        grid-column-end: 4;
-    }
-    .btn{
-        grid-area: btn;
-        grid-column-start:2;
-        grid-column-end: 4;
-    }
-    
 }
 
-//desktop et +
-@media (min-width: 992px){
-    .footer-grid{
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr !important;
-        gap: 10px;
-        grid-template-areas:
-        "logo logo logo"
-        "information social-network btn";
-    }
-    .logo{
-        grid-area:logo;
-        grid-column: 2 !important;
-    }
-    .information{
-        grid-area:information;
-    }
-    .social-network{
-        grid-area:social-network;
-    }
-    .btn{
-        grid-area:btn;
-    }
-}
+@media (min-width: 1400px) {
+    .contact{
+        text-align: left;
+        p{padding-bottom: 0.25rem;}
+} }
