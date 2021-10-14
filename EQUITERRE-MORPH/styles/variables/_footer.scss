@@ -20,6 +20,7 @@ footer{
         "information"
         "btn"
         "social-network";
+        padding-bottom: 5rem;
     }
     .logo{
         grid-area: logo;
@@ -83,7 +84,16 @@ footer{
 }
 
 //tablette
-@media (min-width: 768px){
+@media only screen and (min-width: 768px){
+    .footer-grid{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr !important;
+        gap: 10px;
+        grid-template-areas:
+        "logo logo logo logo"
+        "information information btn btn"
+        "information information social-network social-network" !important;
+    }
     .contact{
         text-align: left;
     }
@@ -106,21 +116,18 @@ footer{
 }
 
 //desktop et +
-@media (min-width: 992px){
+@media only screen and (min-width: 992px){
     .footer-grid{
         display: grid;
         grid-template-columns: 1fr 1fr 1fr !important;
         gap: 10px;
         grid-template-areas:
         "logo logo logo"
-        "information social-network btn";
+        "information social-network btn" !important;
     }
     .logo{
         grid-area:logo;
         grid-column: 2 !important;
-    }
-    .information{
-        grid-area:information;
     }
     .social-network{
         grid-area:social-network;
