@@ -12,6 +12,7 @@ NavBtn.addEventListener('click', () => {
     }
 });
 
+
 //NavBar Scroll
 let Nav = document.querySelector('.Nav');
 
@@ -25,5 +26,7 @@ window.onscroll = () => {
         Nav.classList.remove('colored');
     }
 };
+
+
 
 
