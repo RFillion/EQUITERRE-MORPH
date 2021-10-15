@@ -13,25 +13,25 @@
     .container-fluid{
         margin: auto 0;
     }
-    .card{
-        border:1px black solid;
-        border-radius: 0;
-        height: 238px;
-        .card-title{
-            color: variables.$lapislazuli;
-        }
-        .card-subtitle{
-            color: variables.$goldenrod;
-        }
-        .img-fluid{
-            height: 236px;
-            width: 500px;
-            object-fit:cover;
-        }
-        a{
-            @include variables.links;
-            font-size: 16px;
-            color: variables.$goldenrod;
+    .grid{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+        .card-nouvelle{
+            display: flex;
+            width: 560px;
+            height: 230px;
+            .img-nouvelle{
+                img{
+                    width:250px;
+                    height: 250px;
+                    object-fit: cover;
+                }
+            }
+
+            .text-nouvelle{
+                background-color: variables.$white;
+            }
         }
     }
 }
