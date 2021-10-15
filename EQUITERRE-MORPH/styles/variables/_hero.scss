@@ -10,6 +10,8 @@
         align-items: center;
         .container-fluid {
             margin-left: 8vw;
+
+            h2 {color: variables.$applegreen}
         }
     }
 }
