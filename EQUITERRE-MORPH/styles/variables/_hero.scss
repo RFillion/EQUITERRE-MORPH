@@ -10,18 +10,6 @@
         align-items: center;
         .container-fluid {
             margin-left: 8vw;
-            .btn {
-                border: none;
-                padding: 1em 2em;
-                color: variables.$white;
-                background: black;
-                border-radius: 10px;
-                font-family: 'Poppins', sans-serif;
-                font-weight: 600;
-                margin-top: 50px;
-                &.primary {background: variables.$lapislazuli;}
-                &.secondary {background: variables.$applegreen}
-            }
         }
     }
 }
