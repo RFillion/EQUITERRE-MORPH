@@ -1,14 +1,14 @@
-.htaccess
 wp-admin
 wp-includes
+.htaccess
 index.php
 license.txt
 readme.html
 wp-activate.php
 wp-blog-header.php
 wp-comments-post.php
-wp-config.php
 wp-config-sample.php
+wp-config.php
 wp-cron.php
 wp-links-opml.php
 wp-load.php
