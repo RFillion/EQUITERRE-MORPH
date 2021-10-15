@@ -28,7 +28,7 @@ window.onscroll = () => {
 };
 
 
-//SERVICE
+//Swiper section services
 var swiper = new Swiper(".mySwiper", {
     slidesPerView: 1,
     spaceBetween: 10,

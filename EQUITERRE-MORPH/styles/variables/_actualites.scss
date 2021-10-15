@@ -17,13 +17,17 @@
     .grid{
         place-items: center;
         display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 10px;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        gap: 20px;
         .card-nouvelle{
             display: flex;
             width: 750px;
             height: 300px;
             box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+            &:nth-child(odd){grid-column:2;}
+            &:nth-child(even){grid-column:3;}
             .img-nouvelle{
                 img{
                     width:325px;
@@ -48,6 +52,8 @@
                     color: variables.$goldenrod;
                 }
             }
+            
         }
     }
+    
 }
