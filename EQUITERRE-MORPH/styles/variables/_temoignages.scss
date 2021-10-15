@@ -1,0 +1,11 @@
+@use 'styles/variables/variables';
+
+.card {
+    margin: 2rem 0;
+    .btn--temoignage {
+        background-color: variables.$darkolive;
+        padding: 0.3rem 0.6rem;
+        border-radius: 10px;
+        color: variables.$white;
+    }
+}
