@@ -108,7 +108,7 @@ footer{
         grid-column-start:2;
         grid-column-end: 4;
     }
-    .btn{
+    .btn--footer{
         grid-area: btn;
         grid-column-start:2;
         grid-column-end: 4;
@@ -134,7 +134,7 @@ footer{
     .social-network{
         grid-area:social-network;
     }
-    .btn{
+    .btn--footer{
         grid-area:btn;
     }
     .contact{
