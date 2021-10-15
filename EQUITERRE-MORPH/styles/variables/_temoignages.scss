@@ -1,11 +1,57 @@
 @use 'styles/variables/variables';
 
-.card {
-    margin: 2rem 0;
-    .btn--temoignage {
-        background-color: variables.$darkolive;
-        padding: 0.3rem 0.6rem;
-        border-radius: 10px;
-        color: variables.$white;
+.section--temoignage{
+    margin-bottom: 5vh;
+    .grid{
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 20px;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        margin: auto 0;
+        .text-temoignage {
+            border: none;
+            width: 400px;
+            margin: 0 auto;
+            text-align: left;
+            padding-left: 2vw;
+            .card-subtitle{
+                color: variables.$darkolive;
+            }
+            .card-text{
+                color: variables.$applegreen;
+                width: 400px;
+                padding-bottom: 1rem;
+            }
+        }
     }
+    .img-temoignage{
+        margin: auto 0;
+        padding: 2rem 0;
+        img{
+            border-radius: 38px;
+            width: 175px;
+            height: 175px;
+            object-fit: cover;
+        }
+        .img--title_temoignage{
+            color: variables.$darkolive;
+            padding-bottom: 1rem;
+        }
+    }
+    
+@media screen and (min-width:992px) {
+    .grid{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        padding-top: 2rem;
+    }
+    .img-temoignage{
+        grid-column: 2;
+        img{
+            width: 400px;
+            height: 400px;
+        }
+    }
+}
 }

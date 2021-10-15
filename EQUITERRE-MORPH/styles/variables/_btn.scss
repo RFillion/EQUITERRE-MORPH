@@ -5,7 +5,7 @@
     padding: 0.6rem 1.3rem;
     color: variables.$white;
     background: black;
-    border-radius: 10px;
+    border-radius: 15px;
     font-family: 'Poppins', sans-serif;
     font-weight: 600;
     margin-top: 50px;
@@ -40,4 +40,11 @@
     font-weight: 600;
     width: 155px;
     height: 42px;
+}
+
+.btn--temoignage {
+    background-color: variables.$darkolive;
+    padding: 0.3rem 0.6rem;
+    border-radius: 15px;
+    color: variables.$white;
 }
