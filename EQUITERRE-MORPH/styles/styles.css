@@ -54,45 +54,4 @@ html, body {
   
 
   
-  .swiper {
-    height: 100%;
-    margin: 2em 2em;
-  }
-  .swiper-wrapper {
-    display: flex;
-  }
-  .swiper-slide {
-    text-align: center;
-    bottom: 0;
-    height: 100%;
-    font-size: 18px;
-    background: #fff;
-    display: flex;
-    justify-content: center;
-  }
-
-  .swiper-slide img {
-    display: block;
-    width: 285px;
-    height: 500px;
-    object-fit: cover;
-  }
-
-  .swiper-button-next {
-    background-color: red;
-    border-radius: 10px;
-    width: 50px;
-    height: 50px;
-    
-  }
-  .swiper-button-prev {
-    position: absolute;
-    background-color: red;
-    border-radius: 10px;
-    width: 50px;
-    height: 50px;
-    right: 0;
-    top: 0;
   
-    left: auto;
-  }

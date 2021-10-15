@@ -1,3 +1,4 @@
+import 'swiper/css/bundle';
 import './main.scss'
 
 //NavBar BTN
@@ -29,6 +30,8 @@ window.onscroll = () => {
 
 
 //Swiper section services
+import Swiper from 'swiper/bundle';
+
 var swiper = new Swiper(".mySwiper", {
     slidesPerView: 1,
     spaceBetween: 10,
