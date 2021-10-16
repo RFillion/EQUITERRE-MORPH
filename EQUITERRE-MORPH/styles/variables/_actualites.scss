@@ -19,7 +19,9 @@
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
         grid-template-rows: 1fr 1fr;
-        gap: 20px;
+        row-gap: 20px;
+        column-gap: 20px;
+        padding-top: 2rem;
         .card-nouvelle{
             display: flex;
             width: 600px;
@@ -59,28 +61,11 @@
     @media (max-width:1200px) {
         .grid{
             grid-template-columns: 1fr;
-            grid-template-rows: 1fr;
+            row-gap: 20px;
+            column-gap: 0px;
             .card-nouvelle{
                 &:nth-child(odd){grid-column:span 2;}
                 &:nth-child(even){grid-column:span 2;}
-                p{
-                    font-size: 10px;
-                }
-                h4{
-                    font-size: 22px;
-                    color:variables.$lapislazuli;
-                }
-                h5{
-                    font-size: 14px;
-                }
-                .text-nouvelle{
-                    padding: 1rem;
-                    background-color: variables.$white;
-                    &--soustitre{
-                        color: variables.$goldenrod;
-                    }
-                }
-                
             }
         }
     }
