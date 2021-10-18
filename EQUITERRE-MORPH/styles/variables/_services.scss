@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream:EQUITERRE-MORPH/styles/variables/_services.scss
 @use 'styles/variables/variables'; 
 
 
@@ -61,3 +62,57 @@
     left: auto;
   }
    
+=======
+@use 'styles/variables/variables'; 
+
+.mySwiper {
+    position: relative;
+    height: 75%;
+  }
+  .swiper {
+    
+    height: 100%;
+    margin: 2em 2em;
+  }
+  .swiper-wrapper {
+    display: flex;
+    
+  }
+  .swiper-slide {
+    
+    bottom:0;
+    height: 100%;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content:center;
+    
+  }
+  
+  .swiper-slide img {
+    display: block;
+    width: 285px;
+    height: 500px;
+    object-fit: cover;
+  }
+  
+  .swiper-button-next {
+    background-color: #5B721D;
+    color:white;
+    border-radius: 10px;
+    width: 50px;
+    height: 50px;
+    top:50%;
+  }
+  .swiper-button-prev {
+    position: absolute;
+    background-color:#5B721D;
+    color:white;
+    border-radius: 10px;
+    width: 50px;
+    height: 50px;
+    right: 10px;
+    top: 65%;
+    left: auto;
+  }
+>>>>>>> Stashed changes:EQUITERRE-MORPH/styles/variables/_swiper.scss

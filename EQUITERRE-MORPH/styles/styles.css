@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 *, *::before, *::after { box-sizing: border-box; padding: 0; margin: 0 }
 
 html, body {
@@ -55,3 +56,103 @@ html, body {
 
   
   
+=======
+*, *::before, *::after { box-sizing: border-box; padding: 0; margin: 0 }
+
+html, body {
+  height: 100vh; background: #235c96; 
+  font-family: 'Montserrat', sans-serif; font-size: 15px
+}
+
+  .conteneur {
+    display: flex; justify-content: center;
+    align-items: center; flex-direction: column;
+    height: 100%; width: 100%;
+  }
+
+  .bloc-01, .bloc-02 {
+    width: 300px; max-width: 300px;
+    margin-bottom: 15px;
+  }
+
+  .bloc-01 { height: 300px; background-color: #1a1a1a; }
+
+  .bloc-02 {
+    display: flex; align-items: center;
+    background-color: #94ba32;
+  }
+
+  .bloc-03 {
+    display: flex; align-items: center;
+    width: 300px; height: 100%;
+    background-image: url('../medias/background2.png');
+  }
+
+  .text {
+    text-transform: uppercase; font-size: 30px;
+    font-weight: bold; text-align: center; 
+    padding: 15px; 
+  }
+  
+  .logo { width: 100%; }
+  
+  .membres { color: white; padding: 15px; }
+  
+  .membres h1 {
+      font-size: 30px; font-weight: bold;
+      text-align: center;
+  }
+  
+  @media screen and (min-width: 650px) {
+    .conteneur { flex-direction: row; }
+    .bloc-01, .bloc-02 {height: 300px;}
+    .bloc-02 {margin-bottom: 0;}
+    .bloc-03 { margin-left: 15px; height: 615px; }
+  }
+    
+  
+
+  
+  .swiper {
+    height: 100%;
+    margin: 2em 2em;
+  }
+  .swiper-wrapper {
+    display: flex;
+  }
+  .swiper-slide {
+    text-align: center;
+    bottom: 0;
+    height: 100%;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+  }
+
+  .swiper-slide img {
+    display: block;
+    width: 285px;
+    height: 500px;
+    object-fit: cover;
+  }
+
+  .swiper-button-next {
+    background-color: red;
+    border-radius: 10px;
+    width: 50px;
+    height: 50px;
+    
+  }
+  .swiper-button-prev {
+    position: absolute;
+    background-color: red;
+    border-radius: 10px;
+    width: 50px;
+    height: 50px;
+    right: 0;
+    top: 0;
+  
+    left: auto;
+  }
+>>>>>>> Stashed changes
