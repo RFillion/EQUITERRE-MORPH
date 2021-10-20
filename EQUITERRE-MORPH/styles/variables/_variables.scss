@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+// Couleurs
+$lapislazuli:#235C96;
+$applegreen:#94BA32;
+$goldenrod:#deae13;
+$indigodye:#18416b;
+$darkolive:#5b721D;
+$darkgray:#2A2A2A;
+$white:white;
+
+//typographie
+@mixin title {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+}
+
+@mixin text {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    color: $indigodye;
+}
+
+@mixin links {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    color: $indigodye;
+}
+
+//Breakpoints
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1400px
+);

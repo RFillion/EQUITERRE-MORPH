@@ -1,0 +1,141 @@
+<<<<<<< Updated upstream
+@use 'styles/variables/variables';
+
+.section--actualites{
+    background-color: variables.$lapislazuli;
+    width: 100%;
+    height: auto;
+    border-radius: 30% 20% 100% 0% / 0% 0% 100% 100%;
+    margin-bottom: 5rem;
+    
+    h2{
+        color: variables.$applegreen;
+        margin-top: 5rem;
+    }
+    .container-fluid{
+        margin: auto 0;
+    }
+    .grid{
+        place-items: center;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        row-gap: 20px;
+        column-gap: 20px;
+        padding-top: 2rem;
+        .card-nouvelle{
+            display: flex;
+            width: 600px;
+            height: 250px;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+            &:nth-child(odd){grid-column:2;}
+            &:nth-child(even){grid-column:3;}
+            .img-nouvelle{
+                img{
+                    width:275px;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+            p{
+                font-size: 10px;
+            }
+            h4{
+                font-size: 22px;
+                color:variables.$lapislazuli;
+            }
+            h5{
+                font-size: 14px;
+            }
+            .text-nouvelle{
+                padding: 1rem;
+                background-color: variables.$white;
+                &--soustitre{
+                    color: variables.$goldenrod;
+                }
+            }
+            
+        }
+    }
+
+    @media (max-width:1200px) {
+        .grid{
+            grid-template-columns: 1fr;
+            row-gap: 20px;
+            column-gap: 0px;
+            .card-nouvelle{
+                &:nth-child(odd){grid-column:span 2;}
+                &:nth-child(even){grid-column:span 2;}
+            }
+        }
+    }
+
+    @media only screen and (max-width: 768px){
+        .card-nouvelle{
+            
+        }
+    }
+}
+
+=======
+@use 'styles/variables/variables';
+
+.section--actualites{
+    background-color: variables.$lapislazuli;
+    width: 100%;
+    height: auto;
+    border-radius: 30% 20% 100% 0% / 0% 0% 100% 100%;
+    margin-bottom: 5rem;
+    
+    h2{
+        color: variables.$applegreen;
+        margin-top: 5rem;
+    }
+    .container-fluid{
+        margin: auto 0;
+    }
+    .grid{
+        place-items: center;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        gap: 20px;
+        .card-nouvelle{
+            display: flex;
+            width: 750px;
+            height: 300px;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+            &:nth-child(odd){grid-column:2;}
+            &:nth-child(even){grid-column:3;}
+            .img-nouvelle{
+                img{
+                    width:325px;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+            p{
+                font-size: 12px;
+            }
+            h4{
+                font-size: 22px;
+                color:variables.$lapislazuli;
+            }
+            h5{
+                font-size: 14px;
+            }
+            .text-nouvelle{
+                padding:1.5rem;
+                background-color: variables.$white;
+                &--soustitre{
+                    color: variables.$goldenrod;
+                }
+            }
+            
+        }
+    }
+    
+}
+>>>>>>> Stashed changes

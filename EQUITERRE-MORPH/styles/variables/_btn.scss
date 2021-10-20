@@ -1,0 +1,54 @@
+@use 'styles/variables/variables';
+
+.btn--hero {
+    border: none;
+    padding: 0.6rem 1.3rem;
+    color: variables.$white;
+    background: black;
+    border-radius: 15px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    margin-top: 50px;
+    &.primary {background: variables.$lapislazuli;}
+    &.secondary {background: variables.$applegreen}
+}
+
+.btn--donation{
+    margin-left: auto;
+    margin-right: auto;
+    width: 200px;
+    height: 60px;
+    text-align: center;
+    padding-top:0.75rem;
+    background-color: variables.$lapislazuli;
+    border-radius: 15px;
+    cursor: pointer;
+    padding-bottom: 2rem;
+        a{
+            font-size: 25px;
+        }
+}
+
+//.btn--navbar{}
+
+.btn--section-donation{
+    border: none;
+    color: variables.$white;
+    background: variables.$applegreen;
+    border-radius: 15px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    width: 155px;
+    height: 42px;
+}
+
+.btn--temoignage {
+    background-color: variables.$darkolive;
+    padding: 0.3rem 0.6rem;
+    border-radius: 15px;
+    color: variables.$white;
+}
+
+.btn--actualite {
+    color: variables.$goldenrod;
+}

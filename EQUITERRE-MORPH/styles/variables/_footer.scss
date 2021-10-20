@@ -1,0 +1,144 @@
+
+@use 'styles/variables/variables';
+
+footer{
+    background-color: variables.$darkgray;
+    height: 400px;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    .container-fluid{
+        background-color: variables.$darkgray; 
+    }
+    .footer-grid{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 200px;
+        gap: 18px;
+        grid-template-areas: 
+        "logo"
+        "information"
+        "btn"
+        "social-network";
+        padding-bottom: 5rem;
+    }
+    .logo{
+        grid-area: logo;
+        grid-row:auto;
+        display: flex;
+        .logo--footer{
+           margin: auto auto;
+           width: 350px;
+        }
+    }
+    .information{
+        grid-area:information;
+    }
+    .social-network{
+        grid-area:social-network;
+    }
+    .btn--footer{
+        grid-area: btn;
+        padding: 1.5rem 0;
+    }
+    p, a{
+        color: white;
+        margin: 0;
+        padding: 0;
+    }
+    .copyright {
+        bottom: 0;
+        text-align: center;
+        width: 100%;
+        opacity: 1;
+        font-size: 1em;
+        padding-top:1.5rem;
+    }
+    .contact{
+        text-align: center;
+    }
+    .logo--footer{
+       margin: 2rem auto 0.8rem auto;
+       width: 300px;
+        text-align: center;
+    }
+    .item.social{
+        text-align: center;
+    }
+    .item.social>a {
+        font-size: 36px;
+        width: 36px;
+        height: 36px;
+        line-height: 36px;
+        display: inline-block;
+        text-align: center;
+        margin: 0 8px;
+        color: #fff;
+        opacity: 1;
+        transition: all 115ms ease-in-out;
+
+        &:hover{
+            color:variables.$lapislazuli;
+            transform: scale(1.15);
+        }
+    }
+}
+
+//tablette
+@media only screen and (min-width: 768px){
+    .footer-grid{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr !important;
+        gap: 10px;
+        grid-template-areas:
+        "logo logo logo logo"
+        "information information btn btn"
+        "information information social-network social-network" !important;
+    }
+    .contact{
+        text-align: left;
+    }
+    .information{
+        grid-area:information;
+        grid-column:span 2;
+        grid-column:span 2;
+    }
+    .social-network{
+        grid-area:social-network;
+        grid-column-start:2;
+        grid-column-end: 4;
+    }
+    .btn--footer{
+        grid-area: btn;
+        grid-column-start:2;
+        grid-column-end: 4;
+        padding: 0 !important;
+    }
+    
+}
+
+//desktop et +
+@media only screen and (min-width: 992px){
+    .footer-grid{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr !important;
+        gap: 10px;
+        grid-template-areas:
+        "logo logo logo"
+        "information social-network btn" !important;
+    }
+    .logo{
+        grid-area:logo;
+        grid-column: 2 !important;
+    }
+    .social-network{
+        grid-area:social-network;
+    }
+    .btn--footer{
+        grid-area:btn;
+    }
+    .contact{
+        text-align: left !important;
+        padding-left: 9vw;
+    }
+}

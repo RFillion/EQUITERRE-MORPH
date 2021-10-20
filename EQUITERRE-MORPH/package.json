@@ -1,0 +1,19 @@
+{
+  "name": "equiterre-morph",
+  "version": "0.0.0",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "serve": "vite preview"
+  },
+  "devDependencies": {
+    "vite": "^2.6.0"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.15.4",
+    "bootstrap": "^5.1.2",
+    "gsap": "^3.8.0",
+    "sass": "^1.42.1",
+    "swiper": "^7.0.8"
+  }
+}
