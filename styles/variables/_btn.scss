@@ -29,7 +29,18 @@
         }
 }
 
-//.btn--navbar{}
+.btn--menu{
+    border: none;
+    padding: 0.6rem 1.3rem;
+    color: variables.$white;
+    background: black;
+    border-radius: 15px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    margin-top: 15px;
+    &.primary {background: variables.$lapislazuli;}
+    &.secondary {background: variables.$applegreen}
+}
 
 .btn--section-donation{
     border: none;
