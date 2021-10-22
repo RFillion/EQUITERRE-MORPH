@@ -3,9 +3,6 @@
 **Animation de la page 404:**
 https://codepen.io/S4nic/pen/MWvKyYL?editors=0110
 
-**Animation de la page feuille:**
-https://codepen.io/S4nic/pen/LYjboQq
-
 ### **Pour avoir accès au projet**
 * Ouvrir le Terminal
 * cd .\EQUITERRE-MORPH\
