@@ -54,3 +54,17 @@ var swiper = new Swiper(".mySwiper", {
       }
     }
   });
+
+  let heroSwiper = new Swiper('.heroSwiper', {
+    slidesPerView: 1,
+    spaceBetween: 0,
+    autoplay: {
+      delay: 2500,
+      disableOnInteraction: true,
+    },
+    loop: true,
+    pagination: {
+      el: ".pagination",
+      clickable: true,
+    }
+  });
