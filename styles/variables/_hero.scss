@@ -2,12 +2,45 @@
 
 .header {
     width: 100%; height: 100vh;
-    background: linear-gradient(to top, variables.$lapislazuli, transparent);
     .hero {
         width: 100%; height: 100%;
         display: flex;
         justify-content: center;
         align-items: center;
+        .swiper.heroSwiper {
+            position: absolute;
+            width: 100%; height: 100%;
+            z-index: -1;
+            .swiper-wrapper {
+                width: 100%;
+                height: 100%;
+                .swiper-slide {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: 100%;
+                    height: 100%;
+                    .container-fluid {
+                        z-index: 1;
+                    }
+                    .hero--gradient {
+                        position: absolute;
+                        width: 100%; height: 100%;
+                        background: linear-gradient(to top, variables.$lapislazuli, transparent);
+                        z-index: 0;
+                    }
+                    img {
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                        opacity: 0.5;
+                        position: absolute;
+                        
+                    }
+                }
+            }
+
+        }
         .container-fluid {
             margin-left: 8vw;
 

@@ -1,0 +1,18 @@
+@use 'styles/variables/variables';
+
+.section__about{
+    .container-fluid{
+        padding-top: 3rem;
+    }
+    .container{
+        padding: 3rem 2rem;
+    }
+    li{
+        color: variables.$darkolive;
+        margin-left: 5rem;
+        padding: 0;
+    }
+    h5{
+        padding:0.5rem 0;
+    }
+}

@@ -16,6 +16,7 @@ NavBtn.addEventListener('click', () => {
 
 //NavBar Scroll
 let Nav = document.querySelector('.Nav');
+let imgNav = document.querySelector('.logo img');
 
 window.onscroll = () => {
     "use strict";
@@ -52,5 +53,19 @@ var swiper = new Swiper(".mySwiper", {
         slidesPerView: 3,
         spaceBetween: 50
       }
+    }
+  });
+
+  let heroSwiper = new Swiper('.heroSwiper', {
+    slidesPerView: 1,
+    spaceBetween: 0,
+    autoplay: {
+      delay: 2500,
+      disableOnInteraction: true,
+    },
+    loop: true,
+    pagination: {
+      el: ".pagination",
+      clickable: true,
     }
   });
