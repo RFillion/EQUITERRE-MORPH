@@ -44,6 +44,7 @@ $shadow: 0px 5px 10px rgba(0,0,0,0.3);
             position: relative;
             width: 250px;
             margin: 2em 10px;
+            transition: all 150ms ease;
             img {width: 100%;}
         }
         &__toggle {

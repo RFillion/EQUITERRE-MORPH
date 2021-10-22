@@ -16,6 +16,7 @@ NavBtn.addEventListener('click', () => {
 
 //NavBar Scroll
 let Nav = document.querySelector('.Nav');
+let imgNav = document.querySelector('.logo img');
 
 window.onscroll = () => {
     "use strict";
