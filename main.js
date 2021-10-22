@@ -61,11 +61,10 @@ var swiper = new Swiper(".mySwiper", {
     spaceBetween: 0,
     autoplay: {
       delay: 2500,
-      disableOnInteraction: true,
     },
     loop: true,
     pagination: {
-      el: ".pagination",
+      el: ".hero--pagination",
       clickable: true,
     }
   });
