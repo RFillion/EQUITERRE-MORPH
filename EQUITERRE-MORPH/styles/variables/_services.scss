@@ -1,8 +1,12 @@
 
 @use 'styles/variables/variables';
  
- 
- 
+
+ .swiper-services{
+   .swiper-slide{
+     background-size: cover;
+   }
+ }
 .container {
   height: auto;
 }
@@ -21,7 +25,7 @@
   display: flex;
 
 }
-.swiper-slide {
+.swiper-slide{ 
   bottom:0;
   font-size: 18px;
   background:black;
@@ -29,7 +33,13 @@
   justify-content:center;
   width:100%;
   color:white;
+  a{position: relative;
+    top:50%;
+    font-size:25px;
+  }
+  
 }
+
 
 .swiper-slide img {
   display: block;
