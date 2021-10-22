@@ -129,3 +129,52 @@
 }
 
 }
+
+
+
+
+
+
+
+.servicespage {
+
+  background-color: #181818;
+  color: #fff;
+  padding: 16px;
+  transition: background-color 0.3s;
+
+  img { 
+  
+    width: 100%;
+    margin-bottom: 16px; 
+  }
+  
+  h2 {
+    font-size: 16px;
+    font-weight: normal;
+  }
+  
+  .desc {
+    color: #b3b3b3;
+    font-size: 14px;
+  }
+  
+  &:hover {
+    background-color: #282828;
+  }
+}
+
+.grid {
+  display: grid;
+  gap:24px;
+  grid-template-columns:
+ repeat(auto-fit,minmax(180px, 1fr));
+}
+
+.servicespage{
+  border:25px;
+}
+
+.h1services{
+  font-size:25px;
+}
