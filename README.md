@@ -1,5 +1,8 @@
 # Équiterre
 
+**Animation de la page 404:**
+https://codepen.io/S4nic/pen/MWvKyYL?editors=0110
+
 ### **Pour avoir accès au projet**
 * Ouvrir le Terminal
 * cd .\EQUITERRE-MORPH\
