@@ -26,14 +26,62 @@
 
 }
 
+.gradient{
+  position:absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  background: linear-gradient(transparent,#235c96);
+  
+}
+.gradient2{
+  position:absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  background: linear-gradient(transparent,#94BA32);
+  
+}
+
+.gradient3{
+  position:absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  background: linear-gradient(transparent,#DEAE13);
+  
+}
+.gradient4{
+  position:absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  background: linear-gradient(transparent,#18416B);
+  
+}
+.gradient5{
+  position:absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  background: linear-gradient(transparent,#5B721D);
+  
+}
 .swiper-slide{ 
+  position:relative;
   bottom:0;
   font-size: 18px;
-  background:black;
-  display: flex;
+  display: flex;  
   justify-content:center;
   width:100%;
   color:white;
+  
+ 
 
   a{position: relative;
     top:50%;
@@ -44,20 +92,20 @@
     font-size: 40px;
     
   }
-  
+
 }
 
-
+.h3-services{
+  text-align: center;
+  color:white;
+}
 
 .swiper-slide img {
   display: block;
   width: 285px;
   object-fit: cover;
 }
-.slide:before{transition: height 0.5s ease-out;
-  background: linear-gradient(to bottom, transparent 0%, black 100%);}
-  
-  .slide:hover:before{height: 100%;}
+
 
 .swiper-button-next {
   background-color: #5B721D;
