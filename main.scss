@@ -16,7 +16,7 @@
 h1, h2, h3, h4, h5, h6 {@include variables.title;}
 
 h1{
-    color: color.adjust(variables.$lapislazuli, $lightness: 0);
+    color: variables.$lapislazuli;
     font-size: 80px;
     text-shadow: 3px 3px 5px rgba(0,0,0,0.5);
 }
