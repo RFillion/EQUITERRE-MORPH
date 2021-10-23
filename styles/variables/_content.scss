@@ -9,10 +9,19 @@
     }
     li{
         color: variables.$darkolive;
-        margin-left: 5rem;
+        margin-left: 2.5rem;
         padding: 0;
     }
     h5{
         padding:0.5rem 0;
+    }
+
+    @media (min-width:1375px) {
+        h2{
+            padding-left: 10vw;
+        }
+        li{
+            margin-left: 5rem;  
+        }
     }
 }

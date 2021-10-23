@@ -36,10 +36,11 @@ import Swiper from 'swiper/bundle';
 var swiper = new Swiper(".mySwiper", {
     slidesPerView: 1,
     spaceBetween: 10,
-    navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev"
+    autoplay: {
+      delay: 2500,
+      disableOnInteraction: true,
     },
+    loop: true,
     breakpoints: {
       640: {
         slidesPerView: 1,
