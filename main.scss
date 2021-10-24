@@ -8,16 +8,17 @@
 @use 'styles/variables/donations';
 @use 'styles/variables/temoignages';
 @use 'styles/variables/services';
-@use 'sass:color';
 @use 'styles/variables/content';
 @use 'styles/variables/team';
+@use 'sass:color';
+
 
 *, *::before, *::after { box-sizing: border-box; padding: 0; margin: 0;}
 
 h1, h2, h3, h4, h5, h6 {@include variables.title;}
 
 h1{
-    color: color.adjust(variables.$lapislazuli, $lightness: 0);
+    color: color.adjust(variables.$lapislazuli, $lightness: 0%);
     font-size: 80px;
     text-shadow: 0px 2px 7px rgba(0,0,0,0.5);
 }
