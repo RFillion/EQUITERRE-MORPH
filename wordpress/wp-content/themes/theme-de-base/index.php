@@ -37,3 +37,4 @@ endif;
 
 get_footer(); // Affiche footer.php 
 ?>
+

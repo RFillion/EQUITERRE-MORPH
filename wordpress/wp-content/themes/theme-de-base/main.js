@@ -1,4 +1,4 @@
-/* Wow, tellement un beau spot pour écrire du JS */
+import 'swiper/css/bundle';
 import './main.scss'
 
 //NavBar BTN
@@ -16,6 +16,7 @@ NavBtn.addEventListener('click', () => {
 
 //NavBar Scroll
 let Nav = document.querySelector('.Nav');
+let imgNav = document.querySelector('.logo img');
 
 window.onscroll = () => {
     "use strict";
@@ -29,14 +30,17 @@ window.onscroll = () => {
 };
 
 
-//SERVICE
+//Swiper section services
+import Swiper from 'swiper/bundle';
+
 var swiper = new Swiper(".mySwiper", {
     slidesPerView: 1,
     spaceBetween: 10,
-    navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev"
+    autoplay: {
+      delay: 2500,
+      disableOnInteraction: true,
     },
+    loop: true,
     breakpoints: {
       640: {
         slidesPerView: 1,
@@ -50,5 +54,19 @@ var swiper = new Swiper(".mySwiper", {
         slidesPerView: 3,
         spaceBetween: 50
       }
+    }
+  });
+
+  let heroSwiper = new Swiper('.heroSwiper', {
+    slidesPerView: 1,
+    spaceBetween: 0,
+    autoplay: {
+      delay: 2500,
+      disableOnInteraction: true,
+    },
+    loop: true,
+    pagination: {
+      el: ".pagination",
+      clickable: true,
     }
   });
