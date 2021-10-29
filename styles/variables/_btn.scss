@@ -9,8 +9,15 @@
     font-family: 'Poppins', sans-serif;
     font-weight: 600;
     margin-top: 50px;
-    &.primary {background: variables.$lapislazuli;}
-    &.secondary {background: variables.$applegreen}
+    transition: all 150ms ease;
+    &.primary {
+        background: variables.$lapislazuli;
+        &:hover {background: variables.$indigodye}
+    }
+    &.secondary {
+        background: variables.$applegreen;
+        &:hover {background: variables.$darkolive}
+    }
 }
 
 .btn--donation{
@@ -31,15 +38,22 @@
 
 .btn--menu{
     border: none;
+    width: max-content;
     padding: 0.6rem 1.3rem;
     color: variables.$white;
     background: black;
     border-radius: 15px;
-    font-family: 'Poppins', sans-serif;
     font-weight: 600;
     margin-top: 15px;
-    &.primary {background: variables.$lapislazuli;}
-    &.secondary {background: variables.$applegreen}
+    transition: all 150ms ease;
+    &.primary {
+        background: variables.$lapislazuli;
+        &:hover {background: variables.$indigodye}
+    }
+    &.secondary {
+        background: variables.$applegreen;
+        &:hover {background: variables.$darkolive}
+    }
 }
 
 .btn--section-donation{
