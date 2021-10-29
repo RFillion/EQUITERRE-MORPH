@@ -26,6 +26,11 @@
             width: 350px;
             height: auto;
             box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+            transition: all 150ms ease;
+            &:hover{
+                cursor: pointer;
+                transform: scale(1.05);
+            }
             .img-nouvelle{
                 img{
                     width:350px;
