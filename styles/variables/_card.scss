@@ -3,3 +3,34 @@
 .card {
     height: max-content;
 }
+
+
+.modal {
+    .modal-body {
+        text-align: justify;
+        .container-img {
+            display: flex;
+            width: 100%;
+            justify-content: center;
+        }
+        .modal_img {
+            margin: 0 auto;
+            width: 300px;
+            justify-content: center;
+        }
+
+        h5 {
+            padding-top: 0.5rem;
+        }
+
+        .btn {
+            background-color: variables.$lapislazuli;
+            color: white;
+            width: 100%;
+            transition: all 150ms ease-in-out;
+            &:hover{background-color: variables.$indigodye;
+            border-color: variables.$indigodye;}
+        }
+    }
+
+}
