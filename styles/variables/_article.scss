@@ -1,0 +1,66 @@
+@use 'styles/variables/variables';
+
+.page__article {
+    padding-right: 1rem;
+
+    .article__content {
+        text-align: justify;
+        padding-bottom: 3rem;
+
+        .article__img {
+            width: 475px;
+
+            img {
+                width: 100%;
+            }
+        }
+
+        p {
+            padding: 1rem 0;
+        }
+
+        h5 {
+            padding: 0.5rem 0;
+        }
+
+        a {
+            transition: all 100ms ease-in-out;
+
+            &:hover {
+                font-size: 1.01em;
+                text-decoration: underline;
+            }
+        }
+    }
+
+    .article__video {
+        position: relative;
+        padding-bottom: 56.25%;
+
+        iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    .article__header {
+        padding-top: 3rem;
+    }
+
+
+    @media screen and (min-width:768px) {
+        .article__content {
+            .article__img {
+                width: 100%;
+                justify-content: center;
+
+                img {
+                    width: 80%;
+                }
+            }
+        }
+    }
+}
