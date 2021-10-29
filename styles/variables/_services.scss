@@ -1,113 +1,138 @@
 @use 'styles/variables/variables';
- 
-.section--services{
- .swiper-services{
-   .swiper-slide{
-     background-size: cover;
-   }
- }
-.container {
-  height: auto;
-}
-.mySwiper {
-  position: relative;
-  height:100%;
-}
-.swiper {
-  height: 50vh;
-  margin: 2em 2em;
-}
-.swiper-wrapper {
-  display: flex;
-}
-.gradient{
-  position:absolute;
-  top:0;
-  left:0;
-  width:100%;
-  height:100%;
-  background: linear-gradient(transparent,#235c96); 
-}
-.gradient2{
-  position:absolute;
-  top:0;
-  left:0;
-  width:100%;
-  height:100%;
-  background: linear-gradient(transparent,#94BA32);
-}
-.gradient3{
-  position:absolute;
-  top:0;
-  left:0;
-  width:100%;
-  height:100%;
-  background: linear-gradient(transparent,#DEAE13);
-}
-.gradient4{
-  position:absolute;
-  top:0;
-  left:0;
-  width:100%;
-  height:100%;
-  background: linear-gradient(transparent,#18416B); 
-}
-.gradient5{
-  position:absolute;
-  top:0;
-  left:0;
-  width:100%;
-  height:100%;
-  background: linear-gradient(transparent,#5B721D);
-}
-.swiper-slide{ 
-  position:relative;
-  bottom:0;
-  font-size: 18px;
-  display: flex;  
-  justify-content:center;
-  width:100%;
-  color:white;
-  a{position: relative;
-    top:50%;  
-  } 
-  h1{position: absolute;
-    top:50%;
-    font-size: 40px;  
+
+.section--services {
+  .swiper-services {
+    .swiper-slide {
+      background-size: cover;
+    }
   }
 
-}
-.h3-services{
-  text-align: center;
-  color:white;
-  text-shadow: 0px 2px 7px #000000;
-}
-.swiper-slide img {
-  display: block;
-  width: 285px;
-  object-fit: cover;
-}
-.swiper-button-next {
-  background-color: #5B721D;
-  color:white;
-  border-radius: 10px;
-  width: 50px;
-  height: 50px;
-  top:20vh;
-  right:10px;
-  left:auto;
-}
-.swiper-button-prev {
-  position: absolute;
-  background-color:#5B721D;
-  color:white;
-  border-radius: 10px;
-  width: 50px;
-  height: 50px;
-  right: 10px;
-  top: 30vh;
-  left: auto;
-}
+  .container {
+    height: auto;
+  }
+
+  .mySwiper {
+    position: relative;
+    height: 100%;
+  }
+
+  .swiper {
+    height: 50vh;
+    margin: 2em 2em;
+  }
+
+  .swiper-wrapper {
+    display: flex;
+  }
+
+  .gradient {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(transparent, #235c96);
+  }
+
+  .gradient2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(transparent, #94BA32);
+  }
+
+  .gradient3 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(transparent, #DEAE13);
+  }
+
+  .gradient4 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(transparent, #18416B);
+  }
+
+  .gradient5 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(transparent, #5B721D);
+  }
+
+  .swiper-slide {
+    position: relative;
+    bottom: 0;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    color: white;
+
+    a {
+      position: relative;
+      top: 50%;
+      transition: all 150ms ease;
+      overflow: hidden;
+
+      &:hover {
+        transform: scale(1.05);
+        cursor: pointer;
+      }
+    }
+
+    h1 {
+      position: absolute;
+      top: 50%;
+      font-size: 40px;
+    }
+
+  }
+
+  .h3-services {
+    text-align: center;
+    color: white;
+    text-shadow: 0px 2px 7px #000000;
+  }
+
+  .swiper-slide img {
+    display: block;
+    width: 285px;
+    object-fit: cover;
+  }
+
+  .swiper-button-next {
+    background-color: #5B721D;
+    color: white;
+    border-radius: 10px;
+    width: 50px;
+    height: 50px;
+    top: 20vh;
+    right: 10px;
+    left: auto;
+  }
+
+  .swiper-button-prev {
+    position: absolute;
+    background-color: #5B721D;
+    color: white;
+    border-radius: 10px;
+    width: 50px;
+    height: 50px;
+    right: 10px;
+    top: 30vh;
+    left: auto;
+  }
 }
 
 
