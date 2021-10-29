@@ -1,43 +1,49 @@
 @use 'styles/variables/variables';
 
 
-.section__team{
+.section__team {
     padding-top: 3rem;
-    h2{
+
+    h2 {
         padding-bottom: 1rem;
     }
-    .grid__title{
-        padding-top: 1rem;
+
+    .grid__title {
+        padding:2rem 0;
     }
-    .grid{
+
+    .grid {
         display: grid;
         grid-template-columns: 1fr;
         gap: 20px;
         text-align: center;
         justify-content: center;
-        .team__card{
-         .card__title{
-         }  
-         .card__img{
-            width: 250px;
-            height: 250px;
-            object-fit: cover;
-         } 
-         .card__desc{
-            p{
-                padding: 0 3.15rem;
+
+        .team__card {
+            cursor: pointer;
+            transition: all 150ms ease;
+            .card__img {
+                width: 250px;
+                height: 250px;
+                object-fit: cover;
             }
-         }
+            .card__desc {
+                p {
+                    padding: 0 3.15rem;
+                }
+            }
+            &:hover{transform: scale(1.05);}
         }
     }
 
     @media (min-width:992px) {
-        .grid{
+        .grid {
             grid-template-columns: 1fr 1fr 1fr;
-            .team__card{
-            }
+
+            .team__card {}
         }
-        h2{
+
+        h2 {
             padding-left: 3vw;
             padding-top: 3rem;
         }
