@@ -1,4 +1,5 @@
 @use 'styles/variables/variables';
+@use 'sass:color';
 
 .btn--hero {
     border: none;
@@ -21,19 +22,21 @@
 }
 
 .btn--donation{
-    margin-left: auto;
-    margin-right: auto;
-    width: 200px;
-    height: 60px;
-    text-align: center;
-    padding-top:0.75rem;
+    margin: 0 auto;
+    width: max-content;
+    padding: 0.6rem 1.3rem;
     background-color: variables.$lapislazuli;
     border-radius: 15px;
     cursor: pointer;
-    padding-bottom: 2rem;
-        a{
-            font-size: 25px;
-        }
+    transition: all 150ms ease;
+    a { 
+        font-size: 20px;
+        &:hover {color: variables.$white}
+    }
+    &:hover {
+        background: variables.$indigodye;
+        color: variables.$white;
+    }
 }
 
 .btn--menu{
@@ -63,17 +66,37 @@
     border-radius: 15px;
     font-family: 'Poppins', sans-serif;
     font-weight: 600;
-    width: 155px;
-    height: 42px;
+    width: max-content;
+    padding: 0.6rem 1.3rem;
+    transition: all 150ms ease;
+
+    &:hover {background: color.adjust(variables.$darkolive, $lightness: 10%)}
 }
 
 .btn--temoignage {
-    background-color: variables.$darkolive;
-    padding: 0.3rem 0.6rem;
+    background-color: variables.$applegreen;
+    padding: 0.6rem 1.3rem;
     border-radius: 15px;
     color: variables.$white;
+    transition: all 150ms ease;
+
+    &:hover {background: variables.$darkolive; color: variables.$white;}
 }
 
 .btn--actualite {
     color: variables.$goldenrod;
+    transition: all 150ms ease;
+    &:hover {
+        color: color.adjust(variables.$goldenrod, $blackness: 20%);
+    }
+    &::after {
+        content: '\27A5';
+        font-family: 18px;
+        padding-left: 5px;
+        transition: all 150ms ease;
+        opacity: 0;
+    }
+    &:hover::after {
+        opacity: 1
+    }
 }

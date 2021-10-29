@@ -27,7 +27,6 @@ footer{
         grid-row:auto;
         display: flex;
         .logo--footer{
-           margin: auto auto;
            width: 350px;
         }
     }
@@ -56,6 +55,10 @@ footer{
     }
     .contact{
         text-align: center;
+        & a {
+            transition: all 150ms ease;
+            &:hover {color: variables.$lapislazuli}
+        }
     }
     .logo--footer{
        margin: 2rem auto 0.8rem auto;
@@ -75,10 +78,9 @@ footer{
         margin: 0 8px;
         color: #fff;
         opacity: 1;
-        transition: all 115ms ease-in-out;
-
-        &:hover{
-            color:variables.$lapislazuli;
+        transition: all 150ms ease;
+        &:hover {
+            color: variables.$lapislazuli;
             transform: scale(1.15);
         }
     }
