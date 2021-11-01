@@ -68,16 +68,7 @@ var swiper = new Swiper(".mySwiper", {
     }
   });
 
-
-
-
-
-
-
-
-
-
-
+  //swiper section héro
   let heroSwiper = new Swiper('.heroSwiper', {
     slidesPerView: 1,
     spaceBetween: 0,
