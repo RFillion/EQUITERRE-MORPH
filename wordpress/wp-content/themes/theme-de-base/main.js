@@ -29,6 +29,17 @@ window.onscroll = () => {
     }
 };
 
+//GSAP 404
+
+gsap.fromTo('.terre',
+													 {rotate:0},
+													 {rotate:360, repeat: -1, duration: 15, ease: 'linear.out'}, 2.5);
+
+gsap.timeline().to('.interrogation',{x: '2%', rotate: -25})
+                    .to('.interrogation', {y: '-2%', rotate: 35})
+                    .to('.interrogation', {x: '-2%', rotate: -15})
+                    .to('.interrogation', {y: '2%', rotate: 10})
+                    .to('.interrogation',{x: '2%', rotate: -20, ease: "power1.inOut", yoyo: true, repeat:-1});
 
 //Swiper section services
 import Swiper from 'swiper/bundle';
@@ -57,6 +68,16 @@ var swiper = new Swiper(".mySwiper", {
     }
   });
 
+
+
+
+
+
+
+
+
+
+
   let heroSwiper = new Swiper('.heroSwiper', {
     slidesPerView: 1,
     spaceBetween: 0,
@@ -70,3 +91,12 @@ var swiper = new Swiper(".mySwiper", {
       clickable: true,
     }
   });
+
+
+/* modal */
+var myModal = document.getElementById('myModal')
+var myInput = document.getElementById('myInput')
+
+myModal.addEventListener('shown.bs.modal', function () {
+  myInput.focus()
+})
