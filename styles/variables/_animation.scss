@@ -35,13 +35,15 @@
     position: relative;
     text-align: center;
     margin-top: 175px;
+    
   }
 
   @media (max-width:576px) {
     .interrogation{
     height: 16vh;
-    left: 15%;
-    bottom: 40vh;
+    left: 35%;
+    bottom: 32vh;
+    padding: 10px 0 10px 0;
     }
 
     .terre{
