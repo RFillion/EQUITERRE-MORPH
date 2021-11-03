@@ -41,7 +41,7 @@
 <nav class="Nav">
       <div class="menu">
         <div class="logo">
-          <a href="/"><img src="sources\medias\img_logos\equiterre.png" alt="Logo"/></a>
+          <a href="/"><img src="/wp-content/themes/theme-de-base/sources/medias/img_logos/equiterre.png" alt="Logo"/></a>
         </div>
         <div class="menu__toggle">
           <a><i class="ri-menu-3-fill"></i></a>
@@ -75,7 +75,7 @@
         <div class="swiper heroSwiper">
           <div class="swiper-wrapper">
             <div class="swiper-slide">
-              <img src="sources\medias\img_caroussel\caroussel01.jpg" alt="">
+              <img src="/wp-content/themes/theme-de-base/sources\medias\img_caroussel\caroussel01.jpg" alt="">
               <div class="container-fluid">
                 <div class="row">
                   <div class="col-12 col-md-8">
@@ -88,7 +88,7 @@
               <div class="hero--gradient"></div>
             </div>
             <div class="swiper-slide">
-              <img src="sources\medias\img_caroussel\caroussel02.jpeg" alt="">
+              <img src="/wp-content/themes/theme-de-base/sources\medias\img_caroussel\caroussel02.jpeg" alt="">
               <div class="container-fluid">
                 <div class="row">
                   <div class="col-12 col-md-8">
@@ -101,7 +101,7 @@
               <div class="hero--gradient"></div>
             </div>
             <div class="swiper-slide">
-              <img src="sources\medias\img_caroussel\caroussel03.jpg" alt="">
+              <img src="/wp-content/themes/theme-de-base/sources\medias\img_caroussel\caroussel03.jpg" alt="">
               <div class="container-fluid">
                 <div class="row">
                   <div class="col-12 col-md-8">
@@ -114,7 +114,7 @@
               <div class="hero--gradient"></div>
             </div>
             <div class="swiper-slide">
-              <img src="sources\medias\img_caroussel\caroussel04.jpg" alt="">
+              <img src="/wp-content/themes/theme-de-base/sources\medias\img_caroussel\caroussel04.jpg" alt="">
               <div class="container-fluid">
                 <div class="row">
                   <div class="col-12 col-md-8">
@@ -127,7 +127,7 @@
               <div class="hero--gradient"></div>
             </div>
             <div class="swiper-slide">
-              <img src="sources\medias\img_caroussel\caroussel05.jpg" alt="">
+              <img src="/wp-content/themes/theme-de-base/sources\medias\img_caroussel\caroussel05.jpg" alt="">
               <div class="container-fluid">
                 <div class="row">
                   <div class="col-12 col-md-8">
@@ -140,7 +140,7 @@
               <div class="hero--gradient"></div>
             </div>
             <div class="swiper-slide">
-              <img src="sources\medias\img_caroussel\caroussel06.jpg" alt="">
+              <img src="/wp-content/themes/theme-de-base/sources\medias\img_caroussel\caroussel06.jpg" alt="">
               <div class="container-fluid">
                 <div class="row">
                   <div class="col-12 col-md-8">

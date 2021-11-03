@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the WordPress - 5.8.x - Development - Administration package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2021-10-13 20:51:28+0000\n"
+"PO-Revision-Date: 2021-10-21 15:09:24+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -253,11 +253,6 @@ msgstr "Élément de menu supprimé : %s."
 msgid "item %s"
 msgstr "élément %s"
 
-#. translators: %s: Number of available theme updates.
-#: wp-admin/menu.php:203 wp-admin/network/menu.php:63
-msgid "Themes %s"
-msgstr "%s thèmes"
-
 #. translators: %s: Error message.
 #: wp-admin/includes/privacy-tools.php:419
 msgid "Unable to encode the personal data for export. Error: %s"
@@ -284,6 +279,11 @@ msgstr "Apprenez comment <a href=\"%s\" class=\"update-browser-link\">naviguer s
 #: wp-admin/includes/dashboard.php:1673
 msgid "Internet Explorer does not give you the best WordPress experience. Switch to Microsoft Edge, or another more modern browser to get the most from your site."
 msgstr "Internet Explorer ne vous offre pas la meilleure expérience WordPress. Passez à Microsoft Edge, ou à un autre navigateur plus moderne, pour tirer le meilleur parti de votre site."
+
+#. translators: %s: Number of available theme updates.
+#: wp-admin/menu.php:203 wp-admin/network/menu.php:63
+msgid "Themes %s"
+msgstr "Thèmes %s"
 
 #: wp-admin/includes/class-wp-debug-data.php:656
 msgid "GD supported file formats"

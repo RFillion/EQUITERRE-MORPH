@@ -10,7 +10,7 @@
       <div class="container-fluid">
         <div class="footer-grid">
           <div class="logo">
-            <a href="/" class="logo--footer"><img src="/sources/medias/img_logos/equiterre_blanc.png" class="logo--footer" alt="logo"/></a>
+            <a href="/" class="logo--footer"><img src="/wp-content/themes/theme-de-base/sources/medias/img_logos/equiterre_blanc.png" class="logo--footer" alt="logo"/></a>
           </div>
           <div class="information">
             <div class="contact">
