@@ -1,4 +1,6 @@
+import Swiper from 'swiper';
 import 'swiper/css/bundle';
+import gsap from "gsap";
 import './main.scss'
 
 //NavBar BTN
@@ -42,9 +44,8 @@ gsap.timeline().to('.interrogation',{x: '2%', rotate: -25})
                     .to('.interrogation',{x: '2%', rotate: -20, ease: "power1.inOut", yoyo: true, repeat:-1});
 
 //Swiper section services
-import Swiper from 'swiper/bundle';
 
-var swiper = new Swiper(".mySwiper", {
+let swiper = new Swiper(".mySwiper", {
     slidesPerView: 1,
     spaceBetween: 10,
     autoplay: {
@@ -67,16 +68,6 @@ var swiper = new Swiper(".mySwiper", {
       }
     }
   });
-
-
-
-
-
-
-
-
-
-
 
   let heroSwiper = new Swiper('.heroSwiper', {
     slidesPerView: 1,

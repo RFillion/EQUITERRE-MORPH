@@ -39,6 +39,7 @@
         <p class="copyright">©2021 Équiterre - MORPH</p>
       </div>
     </footer>
+    
 
 <?php wp_footer(); 
 
