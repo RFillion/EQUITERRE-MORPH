@@ -137,84 +137,117 @@
 
 
 /**page service**/
-.page__services{
+.page__services {
 
+  .titre_page{
+    margin-top: 5rem;
+  }
   .servicespage {
-    
     background-color: white;
     color: #fff;
     padding: 16px;
     transition: background-color 0.3s;
-    
-    
-    
-    h2 {
-      font-size: 16px;
-      font-weight: normal;
-    }
-    
-    .desc {
-      color: #b3b3b3;
-      font-size: 14px;
-    }
-    
-    &:hover {
-      background-color: #282828;
-    }
   }
-  
+
   .grid {
     display: grid;
-    gap:24px;
-    grid-template-columns:1fr ;
-    padding-top:50px;
-    padding-bottom:50px;
-    
+    gap: 24px;
+    grid-template-columns: 1fr;
+    margin: 3rem 0;
   }
-  
-  .servicespage{
-    position:relative;
 
-    width:100%;
-    height:400px;
-    
-  }
-  .servicespage img{
-    position:absolute;
-    display: block;
-   width:100%;
-   height:100%;
-   top:0px;
-   left:0;
-   object-fit: cover;
-   
-  }
+
+  .servicespage {
+    position: relative;
+    display: flex;
+    height: 500px;
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+
+    .gradient {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(transparent, #235c96);
+    }
   
-  .h1services{
-    width:100%;
-    height:100%;
-   top:50px;
-    position:relative;
+    .gradient2 {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(transparent, #94BA32);
+    }
+  
+    .gradient3 {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(transparent, #DEAE13);
+    }
+  
+    .gradient4 {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(transparent, #18416B);
+    }
+  
+    .gradient5 {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(transparent, #5B721D);
+    }
   }
- 
- 
+
+  .servicespage img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+
+  }
+  .titre_services {
+    z-index: 2;
+    transition: all 150ms ease;
+    &:hover{
+      transform: scale(1.15);
+      cursor: pointer;
+    }
+    a{
+      color: white;
+      text-shadow: 0px 2px 7px #000000;
+      
+    }
+  }
+
+
 
   @media screen and (min-width:768px) {
-    .grid{
-      grid-template-columns:1fr 1fr ;
-    }  
+    .grid {
+      grid-template-columns: 1fr 1fr;
+    }
   }
 
   @media screen and (min-width:1200px) {
-    .grid{
-      grid-template-columns:1fr 1fr 1fr ;
-     
-    } 
+    .grid {
+      grid-template-columns: 1fr 1fr 1fr;
+
+    }
   }
- 
+
 }
-
-
-
-
-
