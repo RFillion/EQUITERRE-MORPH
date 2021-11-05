@@ -26,14 +26,7 @@
         margin: auto 0;
 
     }
-    .leafAnim{
-        text-align: center;
-        margin: auto 0;
-            overflow: hidden;
-            height: 250px;
-            width: 250px;
-
-    }
+    
     p{
         color: variables.$applegreen;
         font-size: 12px;
@@ -45,27 +38,34 @@
         font-size: 16px;
     }
     /* GSAP DONATION */
+    .leafAnim{
+        text-align: center;
+        margin: auto 0;
+            overflow: hidden;
+            height: 250px;
+            width: 100%;
+
+    }
+
 .leaf{
     position: relative;
-    display: block;
     top: -26%;
-    left: 300px;
+    left: 0.5vw;
     transform: rotate(15deg);
   }
   
   .leaf2{
     position: relative;
-    display: block;
     top: -40%;
-    left: 500px;
+    left: 1vw;
     transform: rotate(15deg);
   }
   
   .leaf3{
     position: relative;
-    display: block;
+
     top: -60%;
-    left: 400px;
+    left: 2vw;
     transform: rotate(15deg);
   }
 
