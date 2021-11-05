@@ -1,6 +1,9 @@
 @use 'styles/variables/variables';
 
 
+  
+  
+
 .section--donation{
     background-color: variables.$darkolive;
     display: flex;
@@ -21,13 +24,15 @@
     .text{
         align-items: center;
         margin: auto 0;
+
     }
-    .img{
+    .leafAnim{
+        text-align: center;
         margin: auto 0;
-        img{
-            height: 150px;
-            width: 150px;
-        }
+            overflow: hidden;
+            height: 250px;
+            width: 250px;
+
     }
     p{
         color: variables.$applegreen;
@@ -39,6 +44,30 @@
     h4{
         font-size: 16px;
     }
+    /* GSAP DONATION */
+.leaf{
+    position: relative;
+    display: block;
+    top: -26%;
+    left: 300px;
+    transform: rotate(15deg);
+  }
+  
+  .leaf2{
+    position: relative;
+    display: block;
+    top: -40%;
+    left: 500px;
+    transform: rotate(15deg);
+  }
+  
+  .leaf3{
+    position: relative;
+    display: block;
+    top: -60%;
+    left: 400px;
+    transform: rotate(15deg);
+  }
 
 
 
@@ -53,8 +82,16 @@
     h4{
         font-size: 24px !important;
     }
-    .img{
-        img{
+    .leafAnim{
+        .leaf{
+            height: 275px !important;
+            width: 275px !important;
+        }
+        .leaf2{
+            height: 275px !important;
+            width: 275px !important;
+        }
+        .leaf3{
             height: 275px !important;
             width: 275px !important;
         }
@@ -72,9 +109,15 @@
     h4{
         font-size: 30px !important;
     }
-    .img{
+    .leafAnim{
         padding-left: 9vw !important;
-        img{
+        .leaf{
+            height: 100% !important;
+        }
+        .leaf2{
+            height: 100% !important;
+        }
+        .leaf3{
             height: 100% !important;
         }
     }
