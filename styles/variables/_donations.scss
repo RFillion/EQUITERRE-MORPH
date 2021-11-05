@@ -38,13 +38,20 @@
         font-size: 16px;
     }
     /* GSAP DONATION */
-    .leafAnim{
+
+
+    .leafAnimGrid{
         text-align: center;
         margin: auto 0;
             overflow: hidden;
             height: 250px;
             width: 100%;
 
+    }
+
+    .leafAnim{
+        position: relative;
+        bottom: 27vh;
     }
 
 .leaf{
@@ -61,13 +68,6 @@
     transform: rotate(15deg);
   }
   
-  .leaf3{
-    position: relative;
-
-    top: -60%;
-    left: 2vw;
-    transform: rotate(15deg);
-  }
 
 
 
@@ -88,10 +88,6 @@
             width: 275px !important;
         }
         .leaf2{
-            height: 275px !important;
-            width: 275px !important;
-        }
-        .leaf3{
             height: 275px !important;
             width: 275px !important;
         }
@@ -117,13 +113,25 @@
         .leaf2{
             height: 100% !important;
         }
-        .leaf3{
-            height: 100% !important;
-        }
     }
     .text{
         padding-left: 9vw !important;
     }
+}
+
+@media only screen and (max-width:1826px) {
+    
+    .leafAnim{
+        padding-left: 9vw !important;
+        .leaf{
+            height: 100% !important;
+        }
+        .leaf2{
+            display: none;
+            height: 100% !important;
+        }
+    }
+    
 }
 
 
