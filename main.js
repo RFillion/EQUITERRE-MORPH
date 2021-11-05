@@ -43,6 +43,46 @@ gsap.timeline().to('.interrogation',{x: '2%', rotate: -25})
                     .to('.interrogation', {y: '2%', rotate: 10})
                     .to('.interrogation',{x: '2%', rotate: -20, ease: "power1.inOut", yoyo: true, repeat:-1});
 
+//GSAP Donation
+
+gsap.timeline({repeat:-1}).to('.leaf', {x:'-80%', y:'+=20', rotate:20, duration: 1.5, ease: "power1.inout"})
+                .to('.leaf', {x:'80%', y:'+=30', rotate:10, duration: 1.5, ease: "power1.inout"})
+                .to('.leaf', {x:'-80%', y:'+=40', rotate:20, duration: 1.5, ease: "power1.inout"})
+                .to('.leaf', {x:'80%', y:'+=50', rotate:10, duration: 1.5, ease: "power1.inout"})
+                .to('.leaf', {x:'-80%', y:'+=60', rotate:20, duration: 1.5, ease: "power1.inout"})
+                .to('.leaf', {x:'80%', y:'+=70', rotate:10, duration: 1.5, ease: "power1.inout"})
+                .to('.leaf', {x:'-80%', y:'+=80', rotate:20, duration: 1.5, ease: "power1.inout"})
+                .to('.leaf', {x:'80%', y:'+=90', rotate:10, duration: 1.5, ease: "power1.inout"})
+                .to('.leaf', {x:'-80%', y:'+=100', rotate:20, duration: 1.5, ease: "power1.inout"})
+                .to('.leaf', {x:'80%', y:'+=110', rotate:10, duration: 1.5, ease: "power1.inout"})
+                .to('.leaf', {x:'-80%', y:'+=120', rotate:20, duration: 1.5, ease: "power1.inout"})
+                
+
+gsap.timeline({repeat:-1}).to('.leaf2', {x:'80%', y:'+=20', rotate:20, duration: 1.5, ease: "power1.inout"})
+                .to('.leaf2', {x:'-80%', y:'+=30', rotate:10, duration: 1.5, ease: "power1.inout"})
+                .to('.leaf2', {x:'80%', y:'+=40', rotate:20, duration: 1.5, ease: "power1.inout"})
+                .to('.leaf2', {x:'-80%', y:'+=50', rotate:10, duration: 1.5, ease: "power1.inout"})
+                .to('.leaf2', {x:'80%', y:'+=60', rotate:20, duration: 1.5, ease: "power1.inout"})
+                .to('.leaf2', {x:'-80%', y:'+=70', rotate:10, duration: 1.5, ease: "power1.inout"})
+                .to('.leaf2', {x:'80%', y:'+=80', rotate:20, duration: 1.5, ease: "power1.inout"})
+                .to('.leaf2', {x:'-80%', y:'+=90', rotate:10, duration: 1.5, ease: "power1.inout"})
+                .to('.leaf2', {x:'80%', y:'+=100', rotate:20, duration: 1.5, ease: "power1.inout"})
+                .to('.leaf2', {x:'-80%', y:'+=110', rotate:10, duration: 1.5, ease: "power1.inout"})
+                .to('.leaf2', {x:'80%', y:'+=120', rotate:20, duration: 1.5, ease: "power1.inout"})
+
+gsap.timeline({repeat:-1}).to('.leaf3', {x:'-80%', y:'+=20', rotate:20, duration: 1.5, ease: "power1.inout"})
+                .to('.leaf3', {x:'80%', y:'+=30', rotate:10, duration: 1.5, ease: "power1.inout"})
+                .to('.leaf3', {x:'-80%', y:'+=40', rotate:20, duration: 1.5, ease: "power1.inout"})
+                .to('.leaf3', {x:'80%', y:'+=50', rotate:10, duration: 1.5, ease: "power1.inout"})
+                .to('.leaf3', {x:'-80%', y:'+=60', rotate:20, duration: 1.5, ease: "power1.inout"})
+                .to('.leaf3', {x:'80%', y:'+=70', rotate:10, duration: 1.5, ease: "power1.inout"})
+                .to('.leaf3', {x:'-80%', y:'+=80', rotate:20, duration: 1.5, ease: "power1.inout"})
+                .to('.leaf3', {x:'80%', y:'+=90', rotate:10, duration: 1.5, ease: "power1.inout"})
+                .to('.leaf3', {x:'-80%', y:'+=100', rotate:20, duration: 1.5, ease: "power1.inout"})
+                .to('.leaf3', {x:'80%', y:'+=110', rotate:10, duration: 1.5, ease: "power1.inout"})
+                .to('.leaf3', {x:'-80%', y:'+=120', rotate:20, duration: 1.5, ease: "power1.inout"})
+
+
 //Swiper section services
 
 let swiper = new Swiper(".mySwiper", {
