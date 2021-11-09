@@ -1,19 +1,24 @@
 @use 'styles/variables/variables';
 
 
-
 .partenaireSwiper{
-    width: 400px;
-    height: 100px;
-    padding: 1.5vh 0 1.5vh 0;
-
+    display: flex !important;
+    justify-content: center !important;
+    width: 250px;
+    height: 100%;
+    padding: 1.5vh 0;
     .carrousselPart{
         width: 100%;
         height: 100%;
-        object-fit: contain;
+    }
+    .swiper-slide{
+        margin: auto 0 !important;
     }
 }
 
+.titre_partenaires{
+    margin-top: 3rem;
+}
 .section--donation{
     background-color: variables.$darkolive;
     display: flex;
@@ -53,9 +58,9 @@
     .leafAnimGrid{
         text-align: center;
         margin: auto 0;
-            overflow: hidden;
-            height: 250px;
-            width: 100%;
+        overflow: hidden;
+        height: 250px;
+        width: 100%;
 
     }
 
@@ -64,17 +69,10 @@
         bottom: 27vh;
     }
 
-.leaf{
+    .leaf{
     position: relative;
     top: -26%;
     left: 0.5vw;
-    transform: rotate(15deg);
-  }
-  
-  .leaf2{
-    position: relative;
-    top: -40%;
-    left: 1vw;
     transform: rotate(15deg);
   }
   
