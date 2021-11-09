@@ -2,17 +2,15 @@
 
 
 .partenaireSwiper{
-    display: flex !important;
-    justify-content: center !important;
     width: 250px;
     height: 100%;
-    padding: 1.5vh 0;
+    padding: 1rem 0;
     .carrousselPart{
         width: 100%;
         height: 100%;
     }
     .swiper-slide{
-        margin: auto 0 !important;
+        margin: auto 0;
     }
 }
 
