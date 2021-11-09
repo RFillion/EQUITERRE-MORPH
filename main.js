@@ -107,6 +107,16 @@ let swiper = new Swiper(".mySwiper", {
     }
   });
 
+  let partenaireSwiper = new Swiper('.partenaireSwiper', {
+    slidesPerView: 1,
+    spaceBetween: 0,
+    autoplay: {
+      delay: 2500,
+      disableOnInteraction: false,
+    },
+    loop: true,
+  });
+
 
 /* modal */
 var myModal = document.getElementById('myModal')
