@@ -14,6 +14,7 @@ if ( have_posts() ) : // Est-ce que nous avons des pages à afficher ?
 		<?php get_template_part('partials/services'); ?> 
 		<?php get_template_part('partials/temoignage'); ?> 
 		<?php get_template_part('partials/donation'); ?> 
+		<?php get_template_part('partials/partenaires'); ?>
 <?php endwhile; 
 
 else : // Si aucune page n'a été trouvée

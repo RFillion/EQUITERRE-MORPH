@@ -29,13 +29,12 @@
                         background: linear-gradient(to top, variables.$lapislazuli, transparent);
                         z-index: 0;
                     }
-                    img {
-                        width: 100%;
-                        height: 100%;
-                        object-fit: cover;
-                        opacity: 0.5;
-                        position: absolute;
-                        
+                    .thumbnail img {
+                            width: 100%;
+                            height: 100%;
+                            object-fit: cover;
+                            opacity: 0.5;
+                            position: absolute;
                     }
                 }
             }

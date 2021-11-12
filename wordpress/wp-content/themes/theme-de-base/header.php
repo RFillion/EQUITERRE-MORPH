@@ -1,8 +1,3 @@
-<?php
-	/*-----------------------------------------------------------------------------------*/
-	/* Affiche l'entête (Header) sur toutes vos pages
-	/*-----------------------------------------------------------------------------------*/
-?>
 <!DOCTYPE html>
 <html <?php language_attributes(); ?>>
 <head>
@@ -71,90 +66,7 @@
       </div>
     </nav>
     <header class="header">
-      <div class="hero">
-        <div class="swiper heroSwiper">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide">
-              <img src="/wp-content/themes/theme-de-base/sources\medias\img_caroussel\caroussel01.jpg" alt="">
-              <div class="container-fluid">
-                <div class="row">
-                  <div class="col-12 col-md-8">
-                    <h1>Titre 01</h1>
-                    <h2>Titre 02</h2>
-                    <button class="btn--hero primary">Lire la suite</button>
-                  </div>
-                </div>
-              </div>
-              <div class="hero--gradient"></div>
-            </div>
-            <div class="swiper-slide">
-              <img src="/wp-content/themes/theme-de-base/sources\medias\img_caroussel\caroussel02.jpeg" alt="">
-              <div class="container-fluid">
-                <div class="row">
-                  <div class="col-12 col-md-8">
-                    <h1>Titre 01</h1>
-                    <h2>Titre 02</h2>
-                    <button class="btn--hero primary">Lire la suite</button>
-                  </div>
-                </div>
-              </div>
-              <div class="hero--gradient"></div>
-            </div>
-            <div class="swiper-slide">
-              <img src="/wp-content/themes/theme-de-base/sources\medias\img_caroussel\caroussel03.jpg" alt="">
-              <div class="container-fluid">
-                <div class="row">
-                  <div class="col-12 col-md-8">
-                    <h1>Titre 01</h1>
-                    <h2>Titre 02</h2>
-                    <button class="btn--hero primary">Lire la suite</button>
-                  </div>
-                </div>
-              </div>
-              <div class="hero--gradient"></div>
-            </div>
-            <div class="swiper-slide">
-              <img src="/wp-content/themes/theme-de-base/sources\medias\img_caroussel\caroussel04.jpg" alt="">
-              <div class="container-fluid">
-                <div class="row">
-                  <div class="col-12 col-md-8">
-                    <h1>Titre 01</h1>
-                    <h2>Titre 02</h2>
-                    <button class="btn--hero primary">Lire la suite</button>
-                  </div>
-                </div>
-              </div>
-              <div class="hero--gradient"></div>
-            </div>
-            <div class="swiper-slide">
-              <img src="/wp-content/themes/theme-de-base/sources\medias\img_caroussel\caroussel05.jpg" alt="">
-              <div class="container-fluid">
-                <div class="row">
-                  <div class="col-12 col-md-8">
-                    <h1>Titre 01</h1>
-                    <h2>Titre 02</h2>
-                    <button class="btn--hero primary">Lire la suite</button>
-                  </div>
-                </div>
-              </div>
-              <div class="hero--gradient"></div>
-            </div>
-            <div class="swiper-slide">
-              <img src="/wp-content/themes/theme-de-base/sources\medias\img_caroussel\caroussel06.jpg" alt="">
-              <div class="container-fluid">
-                <div class="row">
-                  <div class="col-12 col-md-8">
-                    <h1>Titre 01</h1>
-                    <h2>Titre 02</h2>
-                    <button class="btn--hero primary">Lire la suite</button>
-                  </div>
-                </div>
-              </div>
-              <div class="hero--gradient"></div>
-            </div>
-          </div>
-        </div>
-      </div>
+          <?php get_template_part('partials/swiper')?>
     </header>
 
 <main><!-- Débute le contenu principal de notre site -->

@@ -1,5 +1,7 @@
-import Swiper from 'swiper';
+import Swiper, {Autoplay} from 'swiper';
 import 'swiper/css/bundle';
+Swiper.use([Autoplay]);
+
 import gsap from "gsap";
 import './main.scss'
 
@@ -45,27 +47,15 @@ gsap.timeline().to('.interrogation',{x: '2%', rotate: -25})
 
 //GSAP Donation
 
-gsap.timeline({repeat:-1}).to('.leaf', {x:'-80%', y:'+=20', rotate:20, duration: 1.5, ease: "power1.inout"})
-                .to('.leaf', {x:'80%', y:'+=30', rotate:10, duration: 1.5, ease: "power1.inout"})
-                .to('.leaf', {x:'-80%', y:'+=40', rotate:20, duration: 1.5, ease: "power1.inout"})
-                .to('.leaf', {x:'80%', y:'+=50', rotate:10, duration: 1.5, ease: "power1.inout"})
-                .to('.leaf', {x:'-80%', y:'+=60', rotate:20, duration: 1.5, ease: "power1.inout"})
-                .to('.leaf', {x:'80%', y:'+=70', rotate:10, duration: 1.5, ease: "power1.inout"})
-                .to('.leaf', {x:'-80%', y:'+=80', rotate:20, duration: 1.5, ease: "power1.inout"})
-                .to('.leaf', {x:'80%', y:'+=90', rotate:10, duration: 1.5, ease: "power1.inout"})
-
-                
-
-gsap.timeline({repeat:-1}).to('.leaf2', {x:'80%', y:'+=20', rotate:20, duration: 1.5, ease: "power1.inout"})
-                .to('.leaf2', {x:'-80%', y:'+=30', rotate:10, duration: 1.5, ease: "power1.inout"})
-                .to('.leaf2', {x:'80%', y:'+=40', rotate:20, duration: 1.5, ease: "power1.inout"})
-                .to('.leaf2', {x:'-80%', y:'+=50', rotate:10, duration: 1.5, ease: "power1.inout"})
-                .to('.leaf2', {x:'80%', y:'+=60', rotate:20, duration: 1.5, ease: "power1.inout"})
-                .to('.leaf2', {x:'-80%', y:'+=70', rotate:10, duration: 1.5, ease: "power1.inout"})
-                .to('.leaf2', {x:'80%', y:'+=80', rotate:20, duration: 1.5, ease: "power1.inout"})
-                .to('.leaf2', {x:'-80%', y:'+=90', rotate:10, duration: 1.5, ease: "power1.inout"})
-
-
+gsap.timeline({repeat:-1})
+                .to('.leaf', {x:'-80%', y:'+=40', rotate:20, duration: 1.5, ease: "power4.inout"})
+                .to('.leaf', {x:'80%', y:'+=50', rotate:10, duration: 1.5, ease: "power2.in"})
+                .to('.leaf', {x:'-80%', y:'+=60', rotate:20, duration: 1.5, ease: "power4.inout"})
+                .to('.leaf', {x:'80%', y:'+=70', rotate:10, duration: 1.5, ease: "power2.in"})
+                .to('.leaf', {x:'-80%', y:'+=80', rotate:20, duration: 1.5, ease: "power4.inout"})
+                .to('.leaf', {x:'80%', y:'+=90', rotate:10, duration: 1.5, ease: "power2.in"})
+                .to('.leaf', {x:'-80%', y:'+=100', rotate:20, duration: 1.5, ease: "power4.inout"})
+                .to('.leaf', {x:'80%', y:'+=110', rotate:10, duration: 1.5, ease: "power2.in"})
 
 //Swiper section services
 
@@ -108,13 +98,22 @@ let swiper = new Swiper(".mySwiper", {
   });
 
   let partenaireSwiper = new Swiper('.partenaireSwiper', {
-    slidesPerView: 1,
-    spaceBetween: 0,
     autoplay: {
-      delay: 500,
+      delay: 2500,
       disableOnInteraction: true,
     },
     loop: true,
+    breakpoints: {
+      640: {
+        slidesPerView: 1
+      },
+      768: {
+        slidesPerView: 2
+      },
+      1024: {
+        slidesPerView: 3
+      }
+    }
   });
 
 
