@@ -6,14 +6,26 @@ readme.html
 wp-activate.php
 wp-blog-header.php
 wp-comments-post.php
+<<<<<<< HEAD
 wp-config-sample.php 
 wp-config.php 
 wp-cron.php
 wp-links-opml.php 
 wp-load.php 
+=======
+wp-config-sample.php
+wp-config.php
+wp-cron.php
+wp-links-opml.php
+wp-load.php
+>>>>>>> parent of 3f9ba92 (fix img, corrigé mon nom dans le copy deck)
 wp-login.php
 wp-mail.php
 wp-settings.php
 wp-signup.php
 wp-trackback.php
+<<<<<<< HEAD
 xmlrpc.php
+=======
+xmlrpc.php
+>>>>>>> parent of 3f9ba92 (fix img, corrigé mon nom dans le copy deck)
