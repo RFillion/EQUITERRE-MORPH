@@ -42,26 +42,12 @@
           <a><i class="ri-menu-3-fill"></i></a>
         </div>
         <div class="menu__desktop">
-          <ul>
-            <li><a href="/about.html">À propos</a></li>
-            <li><a href="/news.html">Nouvelles</a></li>
-            <li><a href="/services.html">Services</a></li>
-            <li><a href="/team.html">Équipe</a></li>
-            <li><a href="/history.html">Histoire</a></li>
-            <li><a href="#">EN</a></li>
-            <li><a href="https://www.jedonneenligne.org/equiterre/FAIREUNDON/"><button class="btn--menu primary">Faire un don</button></a></li>
-          </ul>
+          <?php  wp_nav_menu(array('theme_location' => 'menu_equiterre')); ?>
         </div>
       </div>
       <div class="hamburger">
         <ul>
-          <a href="/about.html"><li>À propos</li></a>
-          <a href="/news.html"><li>Nouvelles</li></a>
-          <a href="/services.html"><li>Services</li></a>
-          <a href="/team.html"><li>Équipe</li></a>
-          <a href="/history.html"><li>Histoire</li></a>
-          <a href="#"><li>EN</li></a>
-          <a href="https://www.jedonneenligne.org/equiterre/FAIREUNDON/"><li><button class="btn--menu primary">Faire un don</button></li></a>
+        <?php  wp_nav_menu(array('theme_location' => 'menu_equiterre')); ?>
         </ul>
       </div>
     </nav>

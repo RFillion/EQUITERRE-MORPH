@@ -11,16 +11,25 @@ add_theme_support( 'post-thumbnails' );
 
 /* --------------------------------
 Déclare le menu principal */
+function add_last_nav_item($items) {
+	return $items .= '<li><a href="https://www.jedonneenligne.org/equiterre/FAIREUNDON/" target="_blank"><button class="btn--menu primary">Faire un don</button></a></li>';
+}
+
 register_nav_menus( 
 	array(
 		/* 
 			1. 'main-menu' = Nom dans le code
 			2. 'Menu principal' = Nom dans l'admin
 			3. 'Menu principal du site' = Description dans l'admin */
-		'main-menu' => __( 'Menu principal', 'Menu principal du site' ), 
+		'main-menu' => __( 'Menu principal', 'Menu principal du site' ),
+		'menu_equiterre' => __("Menu Équiterre", "Menu principale d'Équiterre."), 
 		/* Dupliquer cette ligne si vous désirez déclarer d'autres menus */
 	)
 );
+
+add_filter('wp_nav_menu_items', 'add_last_nav_item');
+
+
 
 
 /* --------------------------------
