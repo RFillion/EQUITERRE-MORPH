@@ -696,6 +696,8 @@ button.swiper-pagination-bullet {
   color: #fff;
 }
 .btn--actualite {
+  position: absolute;
+  bottom: 20px; right: 20px;
   color: #deae13;
   transition: all 0.15s ease;
 }
@@ -1060,11 +1062,24 @@ footer .item.social > a:hover {
 }
 .section--actualites h2 {
   color: #94ba32;
-  margin-top: 5rem;
+  margin-bottom: 3rem;
 }
-.section--actualites .container-fluid {
-  margin: auto 0;
+
+.section--actualites h5 {
+  transform: translateY(-5px);
 }
+
+.section--actualites h5 a {
+  color: #94ba32;
+  padding-bottom: -4px;
+  border-bottom: 2px solid transparent;
+  transition: all 150ms ease;
+}
+.section--actualites h5 a:hover {
+  padding-bottom: 4px;
+  border-bottom: 2px solid #94ba32;
+}
+
 .section--actualites .grid {
   place-items: center;
   display: grid;
@@ -1076,13 +1091,13 @@ footer .item.social > a:hover {
   display: flex;
   flex-direction: column;
   width: 350px;
-  height: auto;
+  height: 575px;
   box-shadow: #00000059 0 5px 15px;
   transition: all 0.15s ease;
 }
 .section--actualites .grid .card-nouvelle:hover {
   cursor: pointer;
-  transform: scale(1.05);
+  transform: scale(1.03);
 }
 .section--actualites .grid .card-nouvelle .img-nouvelle img {
   width: 350px;
@@ -1093,7 +1108,7 @@ footer .item.social > a:hover {
   font-size: 10px;
 }
 .section--actualites .grid .card-nouvelle h4 {
-  font-size: 22px;
+  font-size: 18px;
   color: #235c96;
 }
 .section--actualites .grid .card-nouvelle h5 {
@@ -1101,7 +1116,9 @@ footer .item.social > a:hover {
 }
 .section--actualites .grid .card-nouvelle .text-nouvelle {
   padding: 1rem;
+  height: 100%;
   background-color: #fff;
+  position: relative;
 }
 .section--actualites .grid .card-nouvelle .text-nouvelle--soustitre {
   color: #deae13;
@@ -1110,12 +1127,12 @@ footer .item.social > a:hover {
   .section--actualites .grid {
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
-    row-gap: 20px;
+    row-gap: 10px;
     column-gap: 0px;
   }
   .section--actualites .grid .card-nouvelle {
     flex-direction: row;
-    height: auto;
+    height: 350px;
     width: 600px;
   }
   .section--actualites .grid .card-nouvelle:nth-child(odd) {

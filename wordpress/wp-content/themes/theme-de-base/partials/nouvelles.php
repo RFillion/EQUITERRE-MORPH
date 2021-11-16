@@ -1,97 +1,29 @@
 <section id="#actualites" class="section--actualites">
-        <div class="container-fluid">
-          <div class="row justify-content-center">
-            <h2 class="col-10">Nouvelles</h2>
-          </div>
-        </div>
-        <div class="grid">
-          <article class="card-nouvelle">
-            <div class="img-nouvelle">
-              <img
-                src="/wp-content/themes/theme-de-base/sources/medias/img_articles/article01.png"
-                alt="article01"
-              />
-            </div>
-            <div class="text-nouvelle">
-              <h4 class="text-nouvelle--title">Lorem Ipsum</h4>
-              <h5 class="text-nouvelle--soustitre">JJ/MM/YYYY</h5>
-              <p class="text-nouvelle--desc">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio,
-                nobis soluta corrupti asperiores similique consectetur quibusdam
-                quam fugiat obcaecati. Sit reiciendis officia ipsa, nam
-                distinctio veritatis esse perspiciatis doloremque aut
-                consequatur cupiditate aliquam quo voluptatibus ut voluptatum.
-                Vel rem distinctio quis, dolor id iure quasi. Deleniti vero ut
-                autem architecto.
-              </p>
-              <a href="#" class="btn--actualite">En savoir plus</a>
-            </div>
-          </article>
-          <article class="card-nouvelle">
-            <div class="img-nouvelle">
-              <img
-                src="/wp-content/themes/theme-de-base/sources/medias/img_articles/article02.png"
-                alt="article01"
-              />
-            </div>
-            <div class="text-nouvelle">
-              <h4 class="text-nouvelle--title">Lorem Ipsum</h4>
-              <h5 class="text-nouvelle--soustitre">JJ/MM/YYYY</h5>
-              <p class="text-nouvelle--desc">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio,
-                nobis soluta corrupti asperiores similique consectetur quibusdam
-                quam fugiat obcaecati. Sit reiciendis officia ipsa, nam
-                distinctio veritatis esse perspiciatis doloremque aut
-                consequatur cupiditate aliquam quo voluptatibus ut voluptatum.
-                Vel rem distinctio quis, dolor id iure quasi. Deleniti vero ut
-                autem architecto.
-              </p>
-              <a href="#" class="btn--actualite">En savoir plus</a>
-            </div>
-          </article>
-          <article class="card-nouvelle">
-            <div class="img-nouvelle">
-              <img
-                src="/wp-content/themes/theme-de-base/sources/medias/img_articles/article03.jpg"
-                alt="article01"
-              />
-            </div>
-            <div class="text-nouvelle">
-              <h4 class="text-nouvelle--title">Lorem Ipsum</h4>
-              <h5 class="text-nouvelle--soustitre">JJ/MM/YYYY</h5>
-              <p class="text-nouvelle--desc">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio,
-                nobis soluta corrupti asperiores similique consectetur quibusdam
-                quam fugiat obcaecati. Sit reiciendis officia ipsa, nam
-                distinctio veritatis esse perspiciatis doloremque aut
-                consequatur cupiditate aliquam quo voluptatibus ut voluptatum.
-                Vel rem distinctio quis, dolor id iure quasi. Deleniti vero ut
-                autem architecto.
-              </p>
-              <a href="#" class="btn--actualite">En savoir plus</a>
-            </div>
-          </article>
-          <article class="card-nouvelle">
-            <div class="img-nouvelle">
-              <img
-                src="/wp-content/themes/theme-de-base/sources/medias/img_articles/article04.png"
-                alt="article01"
-              />
-            </div>
-            <div class="text-nouvelle">
-              <h4 class="text-nouvelle--title">Lorem Ipsum</h4>
-              <h5 class="text-nouvelle--soustitre">JJ/MM/YYYY</h5>
-              <p class="text-nouvelle--desc">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio,
-                nobis soluta corrupti asperiores similique consectetur quibusdam
-                quam fugiat obcaecati. Sit reiciendis officia ipsa, nam
-                distinctio veritatis esse perspiciatis doloremque aut
-                consequatur cupiditate aliquam quo voluptatibus ut voluptatum.
-                Vel rem distinctio quis, dolor id iure quasi. Deleniti vero ut
-                autem architecto.
-              </p>
-              <a href="#" class="btn--actualite">En savoir plus</a>
-            </div>
-          </article>
-        </div>
-      </section>
+  <div class="container">
+    <div class="row d-flex justify-content-center align-items-baseline">
+      <h2 class="col-8 col-md-9 d-flex justify-content-center justify-content-md-start">Nouvelles</h2>
+      <h5 class="col-4 col-md-3 d-flex justify-content-center"><a href="<?php echo esc_url('/services'); ?>">Voir plus</a></h5>
+    </div>
+  </div>
+  <div class="grid">
+
+  <?php 
+    $news = new WP_Query('post_type=nouvelles');
+    while($news->have_posts()) : $news->the_post();
+    ?>
+    <article class="card-nouvelle">
+      <div class="img-nouvelle">
+        <?php the_post_thumbnail('large') ?>
+      </div>
+      <div class="text-nouvelle">
+        <h4 class="text-nouvelle--title"><?php the_title(); ?></h4>
+        <h5 class="text-nouvelle--soustitre"><?php the_field('date'); ?></h5>
+        <p class="text-nouvelle--desc">
+          <?php the_field('description') ?>
+        </p>
+        <a href="<?php the_field('lien') ?>" class="btn--actualite">En savoir plus</a>
+      </div>
+    </article>
+    <?php endwhile; wp_reset_postdata(); ?>
+
+</section>

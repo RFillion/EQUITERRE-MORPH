@@ -3,7 +3,7 @@
         <div class="swiper-wrapper">
 
             <?php 
-            $caroussel = new WP_Query('post_type=hero');
+            $caroussel = new WP_Query('post_type=heros');
             while($caroussel->have_posts()) : $caroussel->the_post();
             ?>
             <div class="swiper-slide">
@@ -14,7 +14,7 @@
                     <div class="row">
                         <div class="col-10">
                             <h1><?php the_title(); ?></h1>
-                            <h2><?php the_field('description'); ?></h2>
+                            <h2><?php the_field('sous-titre'); ?></h2>
                             <a href="<?php the_field('link'); ?>"><button class="btn--hero primary">Lire la suite</button></a>
                         </div>
                     </div>
