@@ -5,21 +5,17 @@
         </div>
         <div class="partenaireSwiper swiper">
             <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                    <img class="carrousselPart" src="sources\medias\img_partenaires\boulangerie-ace.png" alt="">
-                </div>
-                <div class="swiper-slide">
-                    <img class="carrousselPart" src="sources\medias\img_partenaires\csn-logo.png" alt="">
-                </div>
-                <div class="swiper-slide">
-                    <img class="carrousselPart" src="sources\medias\img_partenaires\MAPAQ.png" alt="">
-                </div>
-                <div class="swiper-slide">
-                    <img class="carrousselPart" src="sources\medias\img_partenaires\sante-canada.png" alt="">
-                </div>
-                <div class="swiper-slide">
-                    <img class="carrousselPart" src="sources\medias\img_partenaires\ville-de-laval-logo.png" alt="">
-                </div>
+                <?php
+                $partenaire = new WP_Query('post_type=partenaires');
+                while ($partenaire->have_posts()) : $partenaire->the_post();
+                ?>
+                    <div class="swiper-slide">
+                        <?php the_post_thumbnail('large') ?>
+                    </div>
+                <?php
+                endwhile;
+                wp_reset_postdata();
+                ?>
             </div>
         </div>
     </div>

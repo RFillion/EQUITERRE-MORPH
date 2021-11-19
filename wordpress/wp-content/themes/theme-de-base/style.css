@@ -1163,7 +1163,7 @@ footer .item.social > a:hover {
   height: 100%;
   padding: 1rem 0;
 }
-.partenaireSwiper .carrousselPart {
+.partenaireSwiper img {
   width: 100%;
   height: 100%;
 }
@@ -1320,15 +1320,15 @@ footer .item.social > a:hover {
 }
 @media screen and (min-width: 992px) {
   .section--temoignage .grid {
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    padding-top: 2rem;
-  }
-  .section--temoignage .img-temoignage {
-    grid-column: 2;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 2rem 5rem;
   }
   .section--temoignage .img-temoignage img {
     width: 400px;
     height: 400px;
+  }
+  .section--temoignage .grid .text-temoignage {
+    grid-column: span 2;
   }
 }
 .section--services .swiper-services .swiper-slide {
@@ -1417,10 +1417,11 @@ footer .item.social > a:hover {
   color: #fff;
   text-shadow: 0px 2px 7px #000000;
 }
-.section--services .swiper-slide img {
-  display: block;
-  width: 285px;
+.section--services .swiper-slide .img-service img {
+  position: absolute;
+  width: 100%;
   object-fit: cover;
+  top: 0; left: 0;
 }
 .section--services .swiper-button-next {
   background-color: #5b721d;
