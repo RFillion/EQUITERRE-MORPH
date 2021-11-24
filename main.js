@@ -12,10 +12,44 @@ let Hamburger = document.querySelector('.hamburger');
 NavBtn.addEventListener('click', () => {
     Hamburger.style.display = 'block';
     Hamburger.classList.toggle('open');
+    gsapOpen();
     if (!Hamburger.classList.contains('open')) {
         Hamburger.style.display = 'none';
+        gsapClose();
     }
 });
+
+function gsapOpen() {
+  let mainLine = document.querySelector('.menu__toggle--lines.main');
+  let topLine = document.querySelector('.menu__toggle--lines.top');
+  let bottomLine = document.querySelector('.menu__toggle--lines.bottom');
+
+  gsap.timeline()
+  .to(topLine, {y: 8, ease: Power1.In, duration: '150ms'})
+  .to(topLine, {rotate: '45deg', ease: Power1.In, duration: '150ms'})
+    
+  gsap.timeline()
+  .to(bottomLine, {y: -8, ease: Power1.In, duration: '150ms'})
+  .to(bottomLine, {rotate: '-45deg', ease: Power1.In, duration: '150ms'})
+
+  gsap.to(mainLine,{opacity: 0, duration: '150ms'});
+}
+
+function gsapClose() {
+  let mainLine = document.querySelector('.menu__toggle--lines.main');
+  let topLine = document.querySelector('.menu__toggle--lines.top');
+  let bottomLine = document.querySelector('.menu__toggle--lines.bottom');
+
+  gsap.timeline()
+  .to(topLine, {rotate: 0, ease: Power1.In, duration: '150ms'})
+  .to(topLine, {y: 0, ease: Power1.In, duration: '150ms'})
+
+  gsap.timeline()
+  .to(bottomLine, {rotate: 0, ease: Power1.In, duration: '150ms'})
+  .to(bottomLine, {y: 0, ease: Power1.In, duration: '150ms'})
+
+  gsap.to(mainLine,{opacity: 1, duration: '150ms'});
+}
 
 
 //NavBar Scroll

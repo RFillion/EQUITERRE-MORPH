@@ -54,9 +54,21 @@ $shadow: 0px 5px 10px rgba(0,0,0,0.3);
         &__toggle {
             text-align: right;
             padding-right: 3em;
-            a {color: variables.$lapislazuli;}
-            .ri-menu-3-fill {font-size: 24px}
-            &:hover {cursor: pointer;}
+            position: relative;
+            a {
+                color: variables.$lapislazuli;
+                .menu__toggle--lines{
+                    position: absolute;
+                    width: 1.5em;
+                    height: 3px;
+                    background: variables.$lapislazuli;
+                    transition: all 150ms ease;
+                    right: 50px;
+                    &.top { bottom: 5px; }
+                    &.bottom { top: 8px; }
+                }
+            &:hover {cursor: pointer; background: variables.$applegreen}
+            }
         }
         &__desktop {
             display: none;
