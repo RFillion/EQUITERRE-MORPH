@@ -1,6 +1,6 @@
 <?php 
 /**
- * 	Template Name: À propos
+ * 	Template Name: Histoire
  * 	Identique à page, mais avec une barre latérale
  */
 
