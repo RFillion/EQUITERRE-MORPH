@@ -1,3 +1,6 @@
+import { createPopper } from '@popperjs/core';
+import modal from 'bootstrap';
+
 import Swiper, {Autoplay} from 'swiper';
 import 'swiper/css/bundle';
 Swiper.use([Autoplay]);
@@ -97,7 +100,7 @@ let swiper = new Swiper(".mySwiper", {
     slidesPerView: 1,
     spaceBetween: 10,
     autoplay: {
-      delay: 2500,
+      delay: 3500,
       disableOnInteraction: true,
     },
     loop: true,
@@ -121,7 +124,7 @@ let swiper = new Swiper(".mySwiper", {
     slidesPerView: 1,
     spaceBetween: 0,
     autoplay: {
-      delay: 2500,
+      delay: 3500,
       disableOnInteraction: true,
     },
     loop: true,
@@ -133,7 +136,7 @@ let swiper = new Swiper(".mySwiper", {
 
   let partenaireSwiper = new Swiper('.partenaireSwiper', {
     autoplay: {
-      delay: 2500,
+      delay: 3500,
       disableOnInteraction: true,
     },
     loop: true,
