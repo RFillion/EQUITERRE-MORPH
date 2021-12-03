@@ -21,7 +21,7 @@
         <p class="text-nouvelle--desc">
           <?php the_field('description') ?>
         </p>
-        <a href="<?php the_field('lien') ?>" class="btn--actualite">En savoir plus</a>
+        <a href="<?php get_permalink() ?>" class="btn--actualite">En savoir plus</a>
       </div>
     </article>
     <?php endwhile; wp_reset_postdata(); ?>
