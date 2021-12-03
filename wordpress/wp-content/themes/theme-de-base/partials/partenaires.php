@@ -10,7 +10,9 @@
                 while ($partenaire->have_posts()) : $partenaire->the_post();
                 ?>
                     <div class="swiper-slide">
+                    <a href="<?php the_field('lien') ?>">
                         <?php the_post_thumbnail('large') ?>
+                        </a>
                     </div>
                 <?php
                 endwhile;
